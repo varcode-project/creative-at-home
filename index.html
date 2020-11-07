@@ -1,0 +1,126 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+		<title>reveal.js</title>
+
+		<!--  <link rel="stylesheet" href="dist/reset.css"> -->
+		<link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@300&display=swap" rel="stylesheet">
+		<link rel="stylesheet" href="dist/reveal.css">
+		<link rel="stylesheet" href="/style.css" id="theme">
+		<!--<link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet'>-->
+	</head>
+	<body>
+		<div class="reveal">
+			<div class="slides">
+				<section>
+					<div class="utama">
+						<div class="nav">
+						<img src="/creativehome.svg">
+						<img src="burger.svg">
+						</div>
+						<div class="image"><img src="coder.svg"></div>
+						<div class="text">
+							<p>Bagaimana jika kamu bisa menjadi...</p>
+							<h2 id="apps">Web Developer?</h2>
+						</div>
+						<div class="desc"><p>Manfaatkan waktu kamu selama pandemi!
+							<br>Explore & pelajari bidang-bidang yang ada
+							 <br>di industri teknologi!</p>
+							<a href="index.html#/1"><img src="/swipe.svg"></a></div>
+					</div>
+				</section>
+				<section>
+					<section><div class ="utama">
+						<div class="image"><h1>Web Developer</h1></div>
+					</div></section>
+					<section><div class ="utama">
+						<div class="image"><img src="codeimg.png"></div>
+						<div class="text">
+							<p>Web Developer</p>
+							<p class="desc">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Impedit quis itaque nobis neque tempora, dolorem quisquam placeat ea ipsum illo voluptas obcaecati? Assumenda aliquid, at ad ipsam eligendi fugiat aspernatur, tenetur modi quae id nisi adipisci? Sed exercitationem autem voluptates.</p>
+						</div>
+					</div></section>
+					
+					
+				</section>
+				<section>
+					<section><div class ="utama">
+						<div class="image"><h1>Data Scientist</h1></div>
+					</div></section>
+					<section><div class ="utama">
+						<div class="image"><img src="codeimg.png"></div>
+						<div class="text">
+							<p>Web Developer</p>
+							<p class="desc">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Impedit quis itaque nobis neque tempora, dolorem quisquam placeat ea ipsum illo voluptas obcaecati? Assumenda aliquid, at ad ipsam eligendi fugiat aspernatur, tenetur modi quae id nisi adipisci? Sed exercitationem autem voluptates.</p>
+						</div>
+					</div></section>
+					
+					
+				</section>
+				<section>
+					<section><div class ="utama">
+						<div class="image"><h1>Mobile Developer</h1></div>
+					</div></section>
+					<section><div class ="utama">
+						<div class="image"><img src="codeimg.png"></div>
+						<div class="text">
+							<p>Web Developer</p>
+							<p class="desc">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Impedit quis itaque nobis neque tempora, dolorem quisquam placeat ea ipsum illo voluptas obcaecati? Assumenda aliquid, at ad ipsam eligendi fugiat aspernatur, tenetur modi quae id nisi adipisci? Sed exercitationem autem voluptates.</p>
+						</div>
+					</div></section>
+					
+					
+				</section>
+
+
+		</div>
+
+
+		<script src="https://unpkg.com/typewriter-effect@latest/dist/core.js"></script>
+		<script>
+		var app = document.getElementById('app');
+
+			var typewriter = new Typewriter(app, {
+				loop: true,
+				delay: 30,
+			});
+			
+			typewriter.typeString('WEB DEVELOPER?')
+				.pauseFor(500)
+				.deleteAll(15)
+				.typeString('SOFTWARE ENGINEER?')
+				.pauseFor(500)
+				.deleteAll(15)
+				.typeString('MOBILE DEVELOPER?')
+				.pauseFor(500)
+				.deleteAll(15)
+				.typeString('DATA SCIENTIST?')
+				.pauseFor(500)
+				.deleteAll(15)
+				.start();</script>
+		
+		<script src="dist/reveal.js"></script>
+		<script src="plugin/notes/notes.js"></script>
+		<script src="plugin/markdown/markdown.js"></script>
+		<script src="plugin/highlight/highlight.js"></script>
+		<script>
+			// More info about initialization & config:
+			// - https://revealjs.com/initialization/
+			// - https://revealjs.com/config/
+			Reveal.initialize({
+				transition:"convex",
+				controls: false,
+				progress: false,
+				hash: true,
+				disableLayout: true,
+				overview: false,
+				showNotes: false,
+				// Learn about plugins: https://revealjs.com/plugins/
+				plugins: [ RevealMarkdown, RevealHighlight, RevealNotes ]
+			});
+		</script>
+	</body>
+</html>

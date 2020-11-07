@@ -1,0 +1,67 @@
+*
+{
+    margin: 0 auto;
+    font-family: Montserrat;
+}
+.utama
+{
+    width: 100vw;
+    height:100vh;
+    background:#16161A;
+    display:flex;
+    align-items: center;
+    .text
+    {
+        width:50%;
+        height:45%;
+
+        display: block;
+        color: #FFFFFF;
+        text-align:left;
+        padding-left:15vh;
+        p
+        {
+            font-size:1.8vw;
+            margin:0px;
+        }
+        h2
+        {
+            font-family:"Fira Code";
+            font-size:3.5vw;
+            padding:0px;
+            margin:0px;
+        }
+        .desc
+        {
+            padding-top:5vh;
+            font-family: "Montserrat";
+            font-size:1.5vw;
+            color: #94A1B2;
+        }
+        img
+        {
+            width:40%;
+            height:auto;
+            padding-top:5vh;
+        }
+    }
+    .img
+    {
+        width:50%;
+        height:80%;
+    }
+}
+
+.kedua
+{
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    /* bring your own prefixes */
+    transform: translate(-50%, -50%);
+    p
+    {
+        font-size:50px;
+        filter: drop-shadow(0 0 10px purple);
+    }
+}

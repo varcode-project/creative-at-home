@@ -1,0 +1,213 @@
+@font-face {
+  font-family: 'Quicksand';
+  src: url("/Quicksand.ttf") format("truetype");
+}
+
+* {
+  font-size: 100%;
+  margin: 0 auto;
+  font-family: 'Quicksand';
+  font-weight: 600;
+}
+
+.utama {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 100vw;
+      grid-template-columns: 100vw;
+  -ms-grid-rows: 10vh 10vh 50vh 30vh;
+      grid-template-rows: 10vh 10vh 50vh 30vh;
+      grid-template-areas: 'navbar' 'header' 'image' 'desc';
+  background: #F9FBFF;
+  font-size: 60px;
+  text-align: center;
+  color: #0B1D52;
+}
+
+.nav {
+  width: 100%;
+  height: 100%;
+  -ms-grid-row: 1;
+  -ms-grid-column: 1;
+  grid-area: navbar;
+  color: white;
+  background: white;
+  -webkit-box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.25);
+          box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.25);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.nav img {
+  max-width: 50%;
+  height: auto;
+  background: none;
+  margin: 0vh 3vh 0vh 3vh;
+}
+
+.text {
+  width: 100%;
+  height: 100%;
+  padding: 4vh 0vh 4vh 0vh;
+  -ms-grid-row: 2;
+  -ms-grid-column: 1;
+  grid-area: header;
+  background: none;
+}
+
+.text p {
+  padding: 1vh 0px 0px 0px;
+  font-size: 0.3em;
+}
+
+.text h2 {
+  padding: 0px 0px 0px 0px;
+  font-size: 0.6em;
+}
+
+.image {
+  -ms-grid-row: 3;
+  -ms-grid-column: 1;
+  grid-area: image;
+  width: 100%;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  background: none;
+}
+
+.image img {
+  width: 100%;
+  height: auto;
+}
+
+.desc {
+  width: 100%;
+  height: 100%;
+  font-size: 0.27em;
+  -ms-grid-row: 4;
+  -ms-grid-column: 1;
+  grid-area: desc;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-rows: 40% 60%;
+      grid-template-rows: 40% 60%;
+  background: none;
+}
+
+.desc p {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 100%;
+  height: 100%;
+  line-height: 22px;
+  background: none;
+}
+
+.desc a {
+  width: 100%;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background: none;
+}
+
+.desc a img {
+  width: 90%;
+  height: auto;
+}
+
+/* Extra small devices (phones, 600px and down) */
+/* Small devices (portrait tablets and large phones, 600px and up) */
+/* Medium devices (landscape tablets, 768px and up) */
+/* Large devices (laptops/desktops, 992px and up) */
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+  .utama {
+    width: 100vw;
+    height: 100vh;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: row-reverse;
+            flex-direction: row-reverse;
+    -webkit-box-align: left;
+        -ms-flex-align: left;
+            align-items: left;
+  }
+  .utama .image {
+    text-align: center;
+    width: 50%;
+    height: 80%;
+    background: none;
+  }
+  .utama .image img {
+    max-width: 80%;
+    height: auto;
+  }
+  .utama .text {
+    background: none;
+    text-align: left;
+    width: 50%;
+    height: 80%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+    padding-left: 15vh;
+    margin-top: 15vh;
+  }
+  .utama .text p {
+    font-size: 0.5em;
+    margin-top: 10vh;
+  }
+  .utama .text h2 {
+    font-size: 1.1em;
+    margin: 0px;
+  }
+  .utama .text .desc {
+    margin-top: 5vh;
+    font-size: 0.4em;
+    color: #94A1B2;
+  }
+  .utama .text a {
+    width: 100%;
+    height: 100%;
+  }
+  .utama .text img {
+    width: 50%;
+    height: auto;
+    padding-top: 5vh;
+  }
+}
+/*# sourceMappingURL=style.css.map */
