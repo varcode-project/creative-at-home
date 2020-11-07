@@ -45,15 +45,15 @@
     padding: 4vh 0vh 4vh 0vh; // jarak atas bawah
     grid-area:header;
     background:none; // untuk debug
+    justify-content: center;
     p // bagaimana jika..
     {
         padding: 1vh 0px 0px 0px;
         font-size:0.3em;
     }
-    h2 // animated web developer, data scientiest dll
+    h2
     {
-        padding: 0px 0px 0px 0px;
-        font-size:0.6em;
+        font-size:0.5em;
     }
 } 
 .image // ilustrasi halaman utama
@@ -126,66 +126,103 @@
 
 /* Extra large devices (large laptops and desktops, 1200px and up) */
 @media only screen and (min-width: 1200px) {
-    .utama
+.utama
+{
+    display:grid;
+    grid-template-columns: 50vw 50vw;
+    grid-template-rows: 20vh 30vh 50vh; // size navbar,header,image,desc ditotal harus jadi 100
+    grid-template-areas:
+    'navbar navbar .'
+    'header image image'
+    'desc image image';
+    background: #F9FBFF;
+    text-align:left;
+    color:#0B1D52;
+}
+.nav // navbar
+{
+    width:100%;
+    height:100%;
+    grid-area:navbar;
+    color:white;
+    background:#F9FBFF; // untuk debug
+    box-shadow: none;
+    display:flex;
+    justify-content:space-between;
+    img // logo creative@home
     {
-        width:100vw;
-        height:100vh;
-        display:flex;
-        flex-direction:row-reverse;
-        align-items: left;
-        .image
-        {
-            text-align:center;
-            width:50%;
-            height:80%;
-            background:none;
-            img
-            {
-                max-width: 80%;
-                height: auto;
-            }
-            
-        }
-        .text
-        {
-
-            background:none;
-            text-align:left;
-            width:50%;
-            height:80%;
-            display:flex;
-            flex-direction: column;
-            align-items: flex-start;
-            padding-left:15vh;
-            margin-top:15vh;
-            p
-            {
-                font-size:0.5em;
-                margin-top:10vh;
-            }
-            h2
-            {
-                font-size:1.1em;
-                margin:0px;
-            }
-            .desc
-            {
-                margin-top:5vh;
-                font-size:0.4em ;
-                color: #94A1B2;
-            }
-            a
-            {
-                width:100%;
-                height:100%;
-            }
-            img
-            {
-                width:50%;
-                height:auto;
-                padding-top:5vh;
-            }
-        }   
+        width: 20vw;
+        height:auto;
+        background:none;
+        margin:0vh 8vw 0vh 8vw;
     }
-
+    .burger
+    {
+        display:none;
+    }
+}
+.text // text atas image
+{
+    width:70%;
+    height:50%;
+    padding: 4vh 0vh 4vh 0vh; // jarak atas bawah
+    grid-area:header;
+    background:none; // untuk debug
+    text-align:left;
+    p // bagaimana jika..
+    {
+        padding: 1vh 0px 0px 0px;
+        font-size:1.7vw;
+    }
+    h2
+    {
+        font-size:3.5vw;
+    }
+} 
+.image // ilustrasi halaman utama
+{
+    grid-area:image;
+    width:100%;
+    height:100%;
+    display:flex; // display flex supaya bisa di justify content center (tengah secara horizontal)
+    justify-content:center;
+    background:none; // untuk debug
+    img
+    {
+        width:100%;
+        height:auto;
+    }
+}
+.desc // manfaatkan.. + button
+{
+    width:100%;
+    height:100%;
+    font-size:1.6vw;
+    grid-area:desc;
+    display:grid;
+    grid-template-rows: 40% 60%;
+    background:none; // untuk debug
+    p
+    {
+        width:70%;
+        height:50%;
+        display:flex;
+        align-items:flex-start;
+        justify-content:flex-start;
+        text-align:left;
+        line-height:1.9vw;
+        background:none; // untuk debug
+    }
+    a // button nya
+    {
+        width:70%;
+        height:50%;
+        background:none; // untuk debug
+        img
+        {
+            width:100%;
+            height:auto;
+        }
+    }
+}
 }
