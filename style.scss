@@ -104,6 +104,10 @@
         }
     }
 }
+.navpc
+{
+    display:none; // hide navbar versi desktop
+}
 /* Extra small devices (phones, 600px and down) */
 @media only screen and (max-width: 600px) {
     
@@ -130,9 +134,9 @@
 {
     display:grid;
     grid-template-columns: 50vw 50vw;
-    grid-template-rows: 20vh 30vh 50vh; // size navbar,header,image,desc ditotal harus jadi 100
+    grid-template-rows: 20vh 30vh 50vh; // size baris 1, 2, 3 harus jadi 100
     grid-template-areas:
-    'navbar navbar .'
+    'navbar image image'
     'header image image'
     'desc image image';
     background: #F9FBFF;
@@ -179,13 +183,27 @@
         font-size:3.5vw;
     }
 } 
+.navpc
+{
+    width:60%;
+    height:10%;
+    font-size:2.5vw;
+    display:grid;
+    grid-template-columns: 10vw 10vw;
+    align-items: center;
+    justify-content: end;
+    background:none;
+}
+
 .image // ilustrasi halaman utama
 {
     grid-area:image;
     width:100%;
     height:100%;
     display:flex; // display flex supaya bisa di justify content center (tengah secara horizontal)
+    flex-direction: column;
     justify-content:center;
+    align-items:center;
     background:none; // untuk debug
     img
     {
@@ -202,12 +220,12 @@
     display:grid;
     grid-template-rows: 40% 60%;
     background:none; // untuk debug
-    p
+    p // manfaatkan..
     {
         width:70%;
         height:50%;
-        display:flex;
-        align-items:flex-start;
+        display:flex; 
+        align-items:flex-start; // set jadi align left
         justify-content:flex-start;
         text-align:left;
         line-height:1.9vw;
