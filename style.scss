@@ -1,3 +1,4 @@
+// MOBILE FIRST
 *
 {
     font-size:100%;
@@ -22,11 +23,11 @@
 }
 .nav // navbar
 {
+    background:white;
     width:100%;
     height:100%;
     grid-area:navbar;
     color:white;
-    background:white; // untuk debug
     box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.25);
     display:flex;
     justify-content:space-between;
@@ -40,11 +41,11 @@
 }
 .text // text atas image
 {
+    background:none; // untuk debug
     width:100%;
     height:100%;
     padding: 4vh 0vh 4vh 0vh; // jarak atas bawah
     grid-area:header;
-    background:none; // untuk debug
     justify-content: center;
     p // bagaimana jika..
     {
@@ -58,12 +59,12 @@
 } 
 .image // ilustrasi halaman utama
 {
+    background:none; // untuk debug
     grid-area:image;
     width:100%;
     height:100%;
     display:flex; // display flex supaya bisa di justify content center (tengah secara horizontal)
     justify-content:center;
-    background:none; // untuk debug
     img
     {
         width:100%;
@@ -72,34 +73,34 @@
 }
 .desc // manfaatkan.. + button
 {
+    background:none; // untuk debug
     width:100%;
     height:100%;
     font-size:0.27em;
     grid-area:desc;
     display:grid;
     grid-template-rows: 40% 60%;
-    background:none; // untuk debug
     p
     {
+        background:none; // untuk debug
         display:flex;
         align-items:center;
         justify-content:center;
         width:100%;
         height:100%;
         line-height:22px;
-        background:none; // untuk debug
     }
     a // button nya
     {
+        background:none; // untuk debug
         width:100%;
         height:100%;
         display:flex;
         justify-content:center;
         align-items:center;
-        background:none; // untuk debug
         img
         {
-            width:90%;
+            width:80%;
             height:auto;
         }
     }
@@ -128,13 +129,13 @@
     
 } 
 
-/* Extra large devices (large laptops and desktops, 1200px and up) */
+/* VERSI DESKTOP (large laptops and desktops, 1200px and up) */
 @media only screen and (min-width: 1200px) {
 .utama
 {
     display:grid;
     grid-template-columns: 50vw 50vw;
-    grid-template-rows: 20vh 30vh 50vh; // size baris 1, 2, 3 harus jadi 100
+    grid-template-rows: 20vh 25vh 55vh; // size baris 1, 2, 3 harus jadi 100
     grid-template-areas:
     'navbar image image'
     'header image image'
@@ -149,7 +150,7 @@
     height:100%;
     grid-area:navbar;
     color:white;
-    background:#F9FBFF; // untuk debug
+    background:#F9FBFF;
     box-shadow: none;
     display:flex;
     justify-content:space-between;
@@ -158,7 +159,7 @@
         width: 20vw;
         height:auto;
         background:none;
-        margin:0vh 8vw 0vh 8vw;
+        margin:0vh 7.8vw 0vh 7.5vw;
     }
     .burger
     {
@@ -167,11 +168,11 @@
 }
 .text // text atas image
 {
+    background:none; // untuk debug
     width:70%;
     height:50%;
     padding: 4vh 0vh 4vh 0vh; // jarak atas bawah
     grid-area:header;
-    background:none; // untuk debug
     text-align:left;
     p // bagaimana jika..
     {
@@ -187,7 +188,7 @@
 {
     width:60%;
     height:10%;
-    font-size:2.5vw;
+    font-size:2vw;
     display:grid;
     grid-template-columns: 10vw 10vw;
     align-items: center;
@@ -213,34 +214,39 @@
 }
 .desc // manfaatkan.. + button
 {
+    background:none; // untuk debug
     width:100%;
     height:100%;
     font-size:1.6vw;
     grid-area:desc;
     display:grid;
-    grid-template-rows: 40% 60%;
-    background:none; // untuk debug
+    grid-row-gap: 0px;
+    grid-template-rows: 25% 55%;
+    grid-row-gap:20%;
     p // manfaatkan..
     {
+        background:none; // untuk debug
         width:70%;
-        height:50%;
+        height:100%;
         display:flex; 
         align-items:flex-start; // set jadi align left
         justify-content:flex-start;
         text-align:left;
         line-height:1.9vw;
-        background:none; // untuk debug
     }
     a // button nya
     {
+        display:block;
+        background:red; // untuk debug
         width:70%;
-        height:50%;
-        background:none; // untuk debug
+        height:0.001%; // untuk "hide" excess area link buat mencegah bisa klik di luar button
         img
         {
-            width:100%;
+            max-width:70%;
             height:auto;
         }
     }
+
 }
+
 }

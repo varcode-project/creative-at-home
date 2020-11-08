@@ -20,13 +20,13 @@
 }
 
 .nav {
+  background: white;
   width: 100%;
   height: 100%;
   -ms-grid-row: 1;
   -ms-grid-column: 1;
   grid-area: navbar;
   color: white;
-  background: white;
   -webkit-box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.25);
           box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.25);
   display: -webkit-box;
@@ -45,13 +45,13 @@
 }
 
 .text {
+  background: none;
   width: 100%;
   height: 100%;
   padding: 4vh 0vh 4vh 0vh;
   -ms-grid-row: 2;
   -ms-grid-column: 1;
   grid-area: header;
-  background: none;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
@@ -67,6 +67,7 @@
 }
 
 .image {
+  background: none;
   -ms-grid-row: 3;
   -ms-grid-column: 1;
   grid-area: image;
@@ -78,7 +79,6 @@
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  background: none;
 }
 
 .image img {
@@ -87,6 +87,7 @@
 }
 
 .desc {
+  background: none;
   width: 100%;
   height: 100%;
   font-size: 0.27em;
@@ -97,10 +98,10 @@
   display: grid;
   -ms-grid-rows: 40% 60%;
       grid-template-rows: 40% 60%;
-  background: none;
 }
 
 .desc p {
+  background: none;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -113,10 +114,10 @@
   width: 100%;
   height: 100%;
   line-height: 22px;
-  background: none;
 }
 
 .desc a {
+  background: none;
   width: 100%;
   height: 100%;
   display: -webkit-box;
@@ -128,11 +129,10 @@
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  background: none;
 }
 
 .desc a img {
-  width: 90%;
+  width: 80%;
   height: auto;
 }
 
@@ -144,15 +144,15 @@
 /* Small devices (portrait tablets and large phones, 600px and up) */
 /* Medium devices (landscape tablets, 768px and up) */
 /* Large devices (laptops/desktops, 992px and up) */
-/* Extra large devices (large laptops and desktops, 1200px and up) */
+/* VERSI DESKTOP (large laptops and desktops, 1200px and up) */
 @media only screen and (min-width: 1200px) {
   .utama {
     display: -ms-grid;
     display: grid;
     -ms-grid-columns: 50vw 50vw;
         grid-template-columns: 50vw 50vw;
-    -ms-grid-rows: 20vh 30vh 50vh;
-        grid-template-rows: 20vh 30vh 50vh;
+    -ms-grid-rows: 20vh 25vh 55vh;
+        grid-template-rows: 20vh 25vh 55vh;
         grid-template-areas: 'navbar image image' 'header image image' 'desc image image';
     background: #F9FBFF;
     text-align: left;
@@ -179,19 +179,19 @@
     width: 20vw;
     height: auto;
     background: none;
-    margin: 0vh 8vw 0vh 8vw;
+    margin: 0vh 7.8vw 0vh 7.5vw;
   }
   .nav .burger {
     display: none;
   }
   .text {
+    background: none;
     width: 70%;
     height: 50%;
     padding: 4vh 0vh 4vh 0vh;
     -ms-grid-row: 2;
     -ms-grid-column: 1;
     grid-area: header;
-    background: none;
     text-align: left;
   }
   .text p {
@@ -204,7 +204,7 @@
   .navpc {
     width: 60%;
     height: 10%;
-    font-size: 2.5vw;
+    font-size: 2vw;
     display: -ms-grid;
     display: grid;
     -ms-grid-columns: 10vw 10vw;
@@ -245,6 +245,7 @@
     height: auto;
   }
   .desc {
+    background: none;
     width: 100%;
     height: 100%;
     font-size: 1.6vw;
@@ -253,13 +254,15 @@
     grid-area: desc;
     display: -ms-grid;
     display: grid;
-    -ms-grid-rows: 40% 60%;
-        grid-template-rows: 40% 60%;
-    background: none;
+    grid-row-gap: 0px;
+    -ms-grid-rows: 25% 55%;
+        grid-template-rows: 25% 55%;
+    grid-row-gap: 20%;
   }
   .desc p {
+    background: none;
     width: 70%;
-    height: 50%;
+    height: 100%;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -271,15 +274,15 @@
             justify-content: flex-start;
     text-align: left;
     line-height: 1.9vw;
-    background: none;
   }
   .desc a {
+    display: block;
+    background: red;
     width: 70%;
-    height: 50%;
-    background: none;
+    height: 0.001%;
   }
   .desc a img {
-    width: 100%;
+    max-width: 70%;
     height: auto;
   }
 }
