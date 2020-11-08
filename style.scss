@@ -21,6 +21,75 @@
     text-align:center;
     color:#0B1D52;
 }
+.menu
+{
+    display:grid;
+    grid-template-columns: 100vw;
+    grid-template-rows: 10% 20% auto 15vw; // size navbar, header, pilihan, footer
+    grid-template-areas:
+    'navbar'
+    'header'
+    'pilihan'
+    'footer';
+    background: #F9FBFF;
+    font-size:60px;
+    text-align:center;
+    color:#0B1D52;
+}
+.scrollable // agar menu versi mobile bisa di scroll kebawah
+{
+    overflow-y: auto  !important;
+    height: 700px;
+}
+.headermenu // UPGRADE!.. 
+{
+    background: none;
+    color:black;
+    h1 // UPGRADE!...
+    {
+        padding: 4vh 0vh 0.5vh 0vh; // jarak atas bawah
+        font-size:15vw;
+    }
+    p // Ayo upgrade keahlian..
+    {
+        font-size:3.5vw;
+    }
+}
+.pilihan // list menu
+{
+    width:100%;
+    height:100%;
+    display:grid; // grid buat button button menu
+    grid-template-rows: repeat(6, auto);
+    grid-template-areas:
+    'compsci'
+    'webdev'
+    'datasci'
+    'mobdev'
+    'comppro'
+    'gamedev';
+    grid-gap:5px; // jarak antar grid nya
+}
+.menubutton // style untuk tiap button
+{
+    background:none; // untuk debug
+    width:100%;
+    height:100%;
+    img
+    {
+        width:92%;
+        height:auto;
+    }
+}
+.footer
+{
+    width:100%;
+    height:100%;
+    background:none;
+    grid-area:footer;
+    font-size:5vw;
+    margin: 1vh 0vh 1vh 0vh;
+}
 .nav // navbar
 {
     background:white;
@@ -36,7 +105,7 @@
         max-width: 50%;
         height:auto;
         background:none;
-        margin:0vh 3vh 0vh 3vh;
+        margin:0vh 3vh 0vh 3vh; // jarak kiri kanan
     }
 }
 .text // text atas image
@@ -237,7 +306,7 @@
     a // button nya
     {
         display:block;
-        background:red; // untuk debug
+        background:none; // untuk debug
         width:70%;
         height:0.001%; // untuk "hide" excess area link buat mencegah bisa klik di luar button
         img
