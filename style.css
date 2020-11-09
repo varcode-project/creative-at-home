@@ -224,30 +224,70 @@
     text-align: left;
     color: #0B1D52;
   }
-  .nav {
+  .menu {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 100vw;
+        grid-template-columns: 100vw;
+    -ms-grid-rows: 28vh 60vh 10vh;
+        grid-template-rows: 28vh 60vh 10vh;
+        grid-template-areas: 'header'     'pilihan' 'footer';
+    background: #F9FBFF;
+    text-align: center;
+    color: #0B1D52;
+  }
+  .scrollable {
+    overflow-y: 0  !important;
+    overflow-x: 0 !important;
+    height: auto;
+  }
+  .headermenu {
+    background: none;
+    color: black;
+  }
+  .headermenu h1 {
+    padding: 12vh 0vh 0vh 0vh;
+    font-size: 5vw;
+  }
+  .headermenu p {
+    font-size: 2vw;
+  }
+  .pilihan {
+    background: none;
     width: 100%;
     height: 100%;
-    -ms-grid-row: 1;
-    -ms-grid-column: 1;
-    grid-area: navbar;
-    color: white;
-    background: #F9FBFF;
-    -webkit-box-shadow: none;
-            box-shadow: none;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-rows: 28vh;
+        grid-template-rows: 28vh;
+    -ms-grid-columns: 25vw 25vw 25vw;
+        grid-template-columns: 25vw 25vw 25vw;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+        grid-template-areas: 'compsci webdev datasci' 'mobdev comppro gamedev';
+    grid-gap: 1vw;
   }
-  .nav img {
-    width: 20vw;
-    height: auto;
+  .menubutton {
     background: none;
-    margin: 0vh 7.8vw 0vh 7.5vw;
+    width: 100%;
+    height: auto;
   }
-  .nav .burger {
+  .menubutton img {
+    width: 100%;
+    height: auto;
+  }
+  .footer {
+    background: #F9FBFF;
+    position: fixed;
+    top: 92vh;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    text-align: center;
+    font-size: 1.5vw;
+  }
+  .nav {
     display: none;
   }
   .text {
@@ -255,7 +295,7 @@
     width: 70%;
     height: 50%;
     padding: 4vh 0vh 4vh 0vh;
-    -ms-grid-row: 2;
+    -ms-grid-row: 1;
     -ms-grid-column: 1;
     grid-area: header;
     text-align: left;
@@ -268,20 +308,45 @@
     font-size: 3.5vw;
   }
   .navpc {
-    width: 60%;
-    height: 10%;
-    font-size: 2vw;
+    background: none;
     display: -ms-grid;
     display: grid;
-    -ms-grid-columns: 10vw 10vw;
-        grid-template-columns: 10vw 10vw;
+    -ms-grid-columns: 35vw 25vw 40vw;
+        grid-template-columns: 35vw 25vw 40vw;
+        grid-template-areas: 'logo . text';
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
-    -webkit-box-pack: end;
-        -ms-flex-pack: end;
-            justify-content: end;
+    font-size: 2vw;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    height: 20%;
+    color: black;
+  }
+  .navpc img {
+    -ms-grid-row: 1;
+    -ms-grid-column: 1;
+    grid-area: logo;
+    width: 20vw;
+    height: auto;
     background: none;
+  }
+  .homeabout {
+    background: none;
+    display: -ms-grid;
+    display: grid;
+    height: 7vh;
+    -ms-grid-columns: 50% 50%;
+        grid-template-columns: 50% 50%;
+    grid-gap: 5vw;
+    -ms-grid-row: 1;
+    -ms-grid-column: 3;
+    grid-area: text;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: start;
+    font-size: 2vw;
   }
   .image {
     -ms-grid-row: 1;

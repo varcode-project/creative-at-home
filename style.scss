@@ -213,27 +213,78 @@
     text-align:left;
     color:#0B1D52;
 }
-.nav // navbar
+.menu
 {
+    display:grid;
+    grid-template-columns: 100vw;
+    grid-template-rows: 28vh 60vh 10vh; // size navbar, header, pilihan, footer
+    grid-template-areas:
+    'header'    
+    'pilihan'
+    'footer';
+    background: #F9FBFF;
+    text-align:center;
+    color:#0B1D52;
+}
+.scrollable // agar menu versi mobile bisa di scroll kebawah
+{
+    overflow-y: 0  !important;
+    overflow-x: 0 !important;
+    height: auto;
+}
+.headermenu // UPGRADE!.. 
+{
+    background: none;
+    color:black;
+    h1 // UPGRADE!...
+    {
+        padding: 12vh 0vh 0vh 0vh; // jarak atas bawah
+        font-size:5vw;
+    }
+    p // Ayo upgrade keahlian..
+    {
+        font-size:2vw;
+    }
+}
+.pilihan // list menu
+{
+    background:none;
     width:100%;
     height:100%;
-    grid-area:navbar;
-    color:white;
-    background:#F9FBFF;
-    box-shadow: none;
-    display:flex;
-    justify-content:space-between;
-    img // logo creative@home
+    display:grid; // grid buat button button menu
+    grid-template-rows: 28vh;
+    grid-template-columns: 25vw 25vw 25vw;
+    justify-content:center;
+    grid-template-areas:
+    'compsci webdev datasci'
+    'mobdev comppro gamedev';
+    grid-gap:1vw; // jarak antar grid nya
+}
+.menubutton // style untuk tiap button
+{
+    background:none; // untuk debug
+    width:100%;
+    height:auto;    
+    img
     {
-        width: 20vw;
+        width: 100%;
         height:auto;
-        background:none;
-        margin:0vh 7.8vw 0vh 7.5vw;
     }
-    .burger
-    {
-        display:none;
-    }
+}
+.footer
+{
+    background: #F9FBFF;
+    position: fixed;
+    top:92vh; // jarak 92 height dari atas, berarti 8vh dari bawah
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    text-align: center;
+    font-size:1.5vw;
+}
+.nav // navbar mobile
+{ // #F9FBFF
+    display:none;
 }
 .text // text atas image
 {
@@ -255,16 +306,37 @@
 } 
 .navpc
 {
-    width:60%;
-    height:10%;
-    font-size:2vw;
-    display:grid;
-    grid-template-columns: 10vw 10vw;
-    align-items: center;
-    justify-content: end;
     background:none;
+    display:grid;
+    grid-template-columns: 35vw 25vw 40vw;
+    grid-template-areas:
+    'logo . text';
+    align-items: center;
+    font-size:2vw;
+    position:fixed;
+    width:100%;
+    top:0;
+    height:20%;
+    color:black;
+    img
+    {
+        grid-area:logo;
+        width:20vw;
+        height:auto;
+        background:none;
+    }
 }
-
+.homeabout
+{
+    background:none;
+    display:grid;
+    height:7vh;
+    grid-template-columns: 50% 50%;
+    grid-gap:5vw;
+    grid-area:text;
+    align-items:start;
+    font-size:2vw;
+}
 .image // ilustrasi halaman utama
 {
     grid-area:image;
