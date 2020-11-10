@@ -1,0 +1,24 @@
+.footer {
+  background: none;
+  width: 100%;
+  text-align: center;
+  font-size: 4vw;
+  grid-area: footer;
+  height: 20vh;
+  background: red;
+}
+
+/* VERSI DESKTOP (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+  .footer {
+    background: #F9FBFF;
+    position: fixed;
+    top: 92vh;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    text-align: center;
+    font-size: 1.5vw;
+  }
+}
+/*# sourceMappingURL=footer.css.map */

@@ -1,0 +1,111 @@
+.menu {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 100vw;
+      grid-template-columns: 100vw;
+  -ms-grid-rows: 20vh auto 15vh;
+      grid-template-rows: 20vh auto 15vh;
+      grid-template-areas: 'header' 'pilihan' 'footer';
+  background: #F9FBFF;
+  text-align: center;
+  color: #0B1D52;
+}
+
+.scrollable {
+  overflow-y: auto  !important;
+  height: 700px;
+}
+
+.headermenu {
+  background: none;
+  color: black;
+}
+
+.headermenu h1 {
+  padding: 4vh 0vh 0.5vh 0vh;
+  font-size: 15vw;
+}
+
+.headermenu p {
+  font-size: 3.5vw;
+}
+
+.pilihan {
+  width: 100%;
+  height: 100%;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-rows: (auto)[6];
+      grid-template-rows: repeat(6, auto);
+      grid-template-areas: 'compsci' 'webdev' 'datasci' 'mobdev' 'comppro' 'gamedev';
+  grid-gap: 5px;
+}
+
+.menubutton {
+  background: none;
+  width: 100%;
+  height: 100%;
+}
+
+.menubutton img {
+  width: 92%;
+  height: auto;
+}
+
+/* VERSI DESKTOP (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+  .menu {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 100vw;
+        grid-template-columns: 100vw;
+    -ms-grid-rows: 28vh 60vh 10vh;
+        grid-template-rows: 28vh 60vh 10vh;
+        grid-template-areas: 'header'     'pilihan' 'footer';
+    background: #F9FBFF;
+    text-align: center;
+    color: #0B1D52;
+  }
+  .scrollable {
+    overflow-y: 0  !important;
+    overflow-x: 0 !important;
+    height: auto;
+  }
+  .headermenu {
+    background: none;
+    color: black;
+  }
+  .headermenu h1 {
+    padding: 12vh 0vh 0vh 0vh;
+    font-size: 5vw;
+  }
+  .headermenu p {
+    font-size: 2vw;
+  }
+  .pilihan {
+    background: none;
+    width: 100%;
+    height: 100%;
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-rows: 28vh;
+        grid-template-rows: 28vh;
+    -ms-grid-columns: 25vw 25vw 25vw;
+        grid-template-columns: 25vw 25vw 25vw;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+        grid-template-areas: 'compsci webdev datasci' 'mobdev comppro gamedev';
+    grid-gap: 1vw;
+  }
+  .menubutton {
+    background: none;
+    width: 100%;
+    height: auto;
+  }
+  .menubutton img {
+    width: 100%;
+    height: auto;
+  }
+}
+/*# sourceMappingURL=menu.css.map */

@@ -1,0 +1,25 @@
+// MOBILE FIRST
+.footer // created by varcode
+{
+    background:none;
+    width: 100%;
+    text-align: center;
+    font-size:4vw;
+    grid-area:footer;   
+    height:20vh;
+}
+
+/* VERSI DESKTOP (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+.footer
+{
+    position: fixed;
+    top:92vh; // jarak 92 height dari atas, berarti 8vh dari bawah
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    text-align: center;
+    font-size:1.5vw;
+}
+
+}

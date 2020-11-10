@@ -1,0 +1,122 @@
+// MOBILE FIRST
+.menu // style halaman menu
+{
+    display:grid;
+    grid-template-columns: 100vw;
+    grid-template-rows: 20vh auto 15vh; // size navbar, header, pilihan, footer
+    grid-template-areas:
+    'header'
+    'pilihan'
+    'footer';
+    background: #F9FBFF;
+    text-align:center;
+    color:#0B1D52;  
+}
+.scrollable // agar menu versi mobile bisa di scroll kebawah
+{
+    overflow-y: auto  !important;
+    height: 700px;
+}
+.headermenu // UPGRADE!.. 
+{
+    background: none;
+    color:black;
+    h1 // UPGRADE!...
+    {
+        padding: 4vh 0vh 0.5vh 0vh; // jarak atas bawah
+        font-size:15vw;
+    }
+    p // Ayo upgrade keahlian..
+    {
+        font-size:3.5vw;
+    }
+}
+.pilihan // list menu
+{
+    width:100%;
+    height:100%;
+    display:grid; // grid buat button button menu
+    grid-template-rows: repeat(6, auto);
+    grid-template-areas:
+    'compsci'
+    'webdev'
+    'datasci'
+    'mobdev'
+    'comppro'
+    'gamedev';
+    grid-gap:5px; // jarak antar grid nya
+}
+.menubutton // style untuk tiap button
+{
+    background:none; // untuk debug
+    width:100%;
+    height:100%;
+    img
+    {
+        width:92%;
+        height:auto;
+    }
+}
+
+/* VERSI DESKTOP (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+.menu
+{
+    display:grid;
+    grid-template-columns: 100vw;
+    grid-template-rows: 28vh 60vh 10vh; // size navbar, header, pilihan, footer
+    grid-template-areas:
+    'header'    
+    'pilihan'
+    'footer';
+    background: #F9FBFF;
+    text-align:center;
+    color:#0B1D52;
+}
+.scrollable // agar menu versi mobile bisa di scroll kebawah
+{
+    overflow-y: 0  !important;
+    overflow-x: 0 !important;
+    height: auto;
+}
+.headermenu // UPGRADE!.. 
+{
+    background: none;
+    color:black;
+    h1 // UPGRADE!...
+    {
+        padding: 12vh 0vh 0vh 0vh; // jarak atas bawah
+        font-size:5vw;
+    }
+    p // Ayo upgrade keahlian..
+    {
+        font-size:2vw;
+    }
+}
+.pilihan // list menu
+{
+    background:none;
+    width:100%;
+    height:100%;
+    display:grid; // grid buat button button menu
+    grid-template-rows: 28vh;
+    grid-template-columns: 25vw 25vw 25vw;
+    justify-content:center;
+    grid-template-areas:
+    'compsci webdev datasci'
+    'mobdev comppro gamedev';
+    grid-gap:1vw; // jarak antar grid nya
+}
+.menubutton // style untuk tiap button
+{
+    background:none; // untuk debug
+    width:100%;
+    height:auto;    
+    img
+    {
+        width: 100%;
+        height:auto;
+    }
+}
+
+}

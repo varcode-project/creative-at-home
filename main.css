@@ -1,0 +1,592 @@
+.nav {
+  -webkit-box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.25);
+          box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.25);
+  position: relative;
+  z-index: 10;
+  width: 100%;
+  height: 10vh;
+  grid-area: navbar;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  font-size: 12vw;
+}
+
+.nav img {
+  max-width: 50%;
+  height: auto;
+  background: none;
+  margin: 0vh 3vh 0vh 3vh;
+}
+
+.navpc {
+  display: none;
+}
+
+@media only screen and (min-width: 1200px) {
+  .nav {
+    display: none;
+  }
+  .navpc {
+    background: none;
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 35vw 25vw 40vw;
+        grid-template-columns: 35vw 25vw 40vw;
+        grid-template-areas: 'logo . text';
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    font-size: 2vw;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    height: 20vh;
+    color: black;
+  }
+  .navpc img {
+    -ms-grid-row: 1;
+    -ms-grid-column: 1;
+    grid-area: logo;
+    width: 20vw;
+    height: auto;
+    background: none;
+  }
+  .homeabout {
+    background: none;
+    display: -ms-grid;
+    display: grid;
+    height: 7vh;
+    -ms-grid-columns: 50% 50%;
+        grid-template-columns: 50% 50%;
+    grid-gap: 5vw;
+    -ms-grid-row: 1;
+    -ms-grid-column: 3;
+    grid-area: text;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: start;
+    font-size: 2vw;
+  }
+}
+
+* {
+  font-size: 100%;
+  margin: 0 auto;
+  font-family: 'Quicksand';
+  font-weight: 600;
+}
+
+.utama {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 100vw;
+      grid-template-columns: 100vw;
+  -ms-grid-rows: 10vh 50vh 40vh;
+      grid-template-rows: 10vh 50vh 40vh;
+      grid-template-areas: 'header' 'image' 'desc';
+  background: #F9FBFF;
+  font-size: 15vmin;
+  text-align: center;
+  color: #0B1D52;
+}
+
+.text {
+  background: none;
+  width: 100%;
+  height: 100%;
+  padding: 4vh 0vh 4vh 0vh;
+  -ms-grid-row: 1;
+  -ms-grid-column: 1;
+  grid-area: header;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.text p {
+  padding: 1vh 0px 0px 0px;
+  font-size: 0.3em;
+}
+
+.text h2 {
+  font-size: 0.5em;
+}
+
+.image {
+  background: none;
+  -ms-grid-row: 2;
+  -ms-grid-column: 1;
+  grid-area: image;
+  width: 100%;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.image img {
+  width: 100%;
+  height: auto;
+}
+
+.desc {
+  background: none;
+  width: 100%;
+  height: 100%;
+  font-size: 0.27em;
+  -ms-grid-row: 3;
+  -ms-grid-column: 1;
+  grid-area: desc;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-rows: 40% 60%;
+      grid-template-rows: 40% 60%;
+}
+
+.desc p {
+  background: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 100%;
+  height: 100%;
+  line-height: 22px;
+}
+
+.desc a {
+  background: none;
+  width: 100%;
+  height: 100%;
+}
+
+.desc a img {
+  width: 80%;
+  height: auto;
+}
+
+@media only screen and (min-width: 1200px) {
+  .utama {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 50vw 50vw;
+        grid-template-columns: 50vw 50vw;
+    -ms-grid-rows: 20vh 25vh 55vh;
+        grid-template-rows: 20vh 25vh 55vh;
+        grid-template-areas: 'navbar image image' 'header image image' 'desc image image';
+    background: #F9FBFF;
+    text-align: left;
+    color: #0B1D52;
+  }
+  .text {
+    background: none;
+    width: 70%;
+    height: 50%;
+    padding: 4vh 0vh 4vh 0vh;
+    -ms-grid-row: 1;
+    -ms-grid-column: 1;
+    grid-area: header;
+    text-align: left;
+  }
+  .text p {
+    padding: 1vh 0px 0px 0px;
+    font-size: 1.7vw;
+  }
+  .text h2 {
+    font-size: 3.5vw;
+  }
+  .image {
+    -ms-grid-row: 1;
+    -ms-grid-row-span: 3;
+    -ms-grid-column: 2;
+    -ms-grid-column-span: 2;
+    grid-area: image;
+    width: 100%;
+    height: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    background: none;
+  }
+  .image img {
+    width: 100%;
+    height: auto;
+  }
+  .desc {
+    background: none;
+    width: 100%;
+    height: 100%;
+    font-size: 1.6vw;
+    -ms-grid-row: 3;
+    -ms-grid-column: 1;
+    grid-area: desc;
+    display: -ms-grid;
+    display: grid;
+    grid-row-gap: 0px;
+    -ms-grid-rows: 25% 55%;
+        grid-template-rows: 25% 55%;
+    grid-row-gap: 20%;
+  }
+  .desc p {
+    background: none;
+    width: 70%;
+    height: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+    text-align: left;
+    line-height: 1.9vw;
+  }
+  .desc a {
+    display: block;
+    background: none;
+    width: 70%;
+    height: 0.001%;
+  }
+  .desc a img {
+    max-width: 70%;
+    height: auto;
+  }
+}
+
+.menu {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 100vw;
+      grid-template-columns: 100vw;
+  -ms-grid-rows: 20vh auto 15vh;
+      grid-template-rows: 20vh auto 15vh;
+      grid-template-areas: 'header' 'pilihan' 'footer';
+  background: #F9FBFF;
+  text-align: center;
+  color: #0B1D52;
+}
+
+.scrollable {
+  overflow-y: auto  !important;
+  height: 700px;
+}
+
+.headermenu {
+  background: none;
+  color: black;
+}
+
+.headermenu h1 {
+  padding: 4vh 0vh 0.5vh 0vh;
+  font-size: 15vw;
+}
+
+.headermenu p {
+  font-size: 3.5vw;
+}
+
+.pilihan {
+  width: 100%;
+  height: 100%;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-rows: (auto)[6];
+      grid-template-rows: repeat(6, auto);
+      grid-template-areas: 'compsci' 'webdev' 'datasci' 'mobdev' 'comppro' 'gamedev';
+  grid-gap: 5px;
+}
+
+.menubutton {
+  background: none;
+  width: 100%;
+  height: 100%;
+}
+
+.menubutton img {
+  width: 92%;
+  height: auto;
+}
+
+/* VERSI DESKTOP (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+  .menu {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 100vw;
+        grid-template-columns: 100vw;
+    -ms-grid-rows: 28vh 60vh 10vh;
+        grid-template-rows: 28vh 60vh 10vh;
+        grid-template-areas: 'header'     'pilihan' 'footer';
+    background: #F9FBFF;
+    text-align: center;
+    color: #0B1D52;
+  }
+  .scrollable {
+    overflow-y: 0  !important;
+    overflow-x: 0 !important;
+    height: auto;
+  }
+  .headermenu {
+    background: none;
+    color: black;
+  }
+  .headermenu h1 {
+    padding: 12vh 0vh 0vh 0vh;
+    font-size: 5vw;
+  }
+  .headermenu p {
+    font-size: 2vw;
+  }
+  .pilihan {
+    background: none;
+    width: 100%;
+    height: 100%;
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-rows: 28vh;
+        grid-template-rows: 28vh;
+    -ms-grid-columns: 25vw 25vw 25vw;
+        grid-template-columns: 25vw 25vw 25vw;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+        grid-template-areas: 'compsci webdev datasci' 'mobdev comppro gamedev';
+    grid-gap: 1vw;
+  }
+  .menubutton {
+    background: none;
+    width: 100%;
+    height: auto;
+  }
+  .menubutton img {
+    width: 100%;
+    height: auto;
+  }
+}
+
+.tengah {
+  width: 100%;
+  height: 100%;
+  display: -ms-grid;
+  display: grid;
+  height: 100vh;
+  -ms-grid-columns: 100vw;
+      grid-template-columns: 100vw;
+  -ms-grid-rows: 85vh 5vh;
+      grid-template-rows: 85vh 5vh;
+      grid-template-areas: 'isitengah' 'footer';
+  background: #C74D75;
+  font-size: 12vw;
+  text-align: center;
+  color: white;
+}
+
+.isitengah {
+  -ms-grid-row: 1;
+  -ms-grid-column: 1;
+  grid-area: isitengah;
+  width: 100%;
+  height: 100%;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-rows: 10% 40% 20%;
+      grid-template-rows: 10% 40% 20%;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  background: none;
+  grid-gap: 8%;
+}
+
+.head {
+  background: none;
+  font-size: 7vw;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.ilustrasi {
+  background: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 80%;
+}
+
+.ilustrasi img {
+  width: 100%;
+  height: auto;
+}
+
+.teks {
+  background: none;
+  display: -ms-grid;
+  display: grid;
+  grid-gap: 20%;
+  font-size: 5vw;
+}
+
+.teks img {
+  width: 20%;
+  height: auto;
+  -webkit-animation: upNdown 1.5s infinite linear;
+          animation: upNdown 1.5s infinite linear;
+}
+
+@-webkit-keyframes upNdown {
+  0% {
+  }
+  50% {
+    -webkit-transform: translateY(-5px);
+            transform: translateY(-5px);
+  }
+  100% {
+  }
+}
+
+@keyframes upNdown {
+  0% {
+  }
+  50% {
+    -webkit-transform: translateY(-5px);
+            transform: translateY(-5px);
+  }
+  100% {
+  }
+}
+
+/* VERSI DESKTOP (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+  .tengah {
+    width: 100%;
+    height: 100%;
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 100vw;
+        grid-template-columns: 100vw;
+    -ms-grid-rows: 90vh 10vh;
+        grid-template-rows: 90vh 10vh;
+        grid-template-areas: 'isitengah' 'footer';
+    background: #C74D75;
+    font-size: 12vw;
+    text-align: center;
+    color: white;
+  }
+  .isitengah {
+    padding-top: 5vh;
+    -ms-grid-row: 1;
+    -ms-grid-column: 1;
+    grid-area: isitengah;
+    width: 100%;
+    height: 100%;
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-rows: 10% 50% 10%;
+        grid-template-rows: 10% 50% 10%;
+    -ms-flex-line-pack: center;
+        align-content: center;
+    grid-gap: 2vh;
+  }
+  .head {
+    background: none;
+    font-size: 3vw;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .ilustrasi {
+    background: none;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    width: 80%;
+  }
+  .ilustrasi img {
+    width: 30%;
+    height: auto;
+  }
+  .teks {
+    background: none;
+    display: -ms-grid;
+    display: grid;
+    grid-gap: 3vh;
+    width: 50%;
+    font-size: 1.7vw;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .teks img {
+    display: none;
+  }
+  .homeabout {
+    color: white;
+  }
+}
+
+.footer {
+  background: none;
+  width: 100%;
+  text-align: center;
+  font-size: 4vw;
+  -ms-grid-row: 2;
+  -ms-grid-column: 1;
+  grid-area: footer;
+  height: 20vh;
+}
+
+/* VERSI DESKTOP (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+  .footer {
+    position: fixed;
+    top: 92vh;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    text-align: center;
+    font-size: 1.5vw;
+  }
+}
+
+/* Extra small devices (phones, 600px and down) */
+/* Small devices (portrait tablets and large phones, 600px and up) */
+/* Medium devices (landscape tablets, 768px and up) */
+/* Large devices (laptops/desktops, 992px and up) */
+/* VERSI DESKTOP (large laptops and desktops, 1200px and up) */
+/*# sourceMappingURL=main.css.map */

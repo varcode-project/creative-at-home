@@ -1,0 +1,60 @@
+.tengah {
+  display: -ms-grid;
+  display: grid;
+  height: 100vh;
+  -ms-grid-columns: 100vw;
+      grid-template-columns: 100vw;
+  -ms-grid-rows: 15vh 75vh 10vh;
+      grid-template-rows: 15vh 75vh 10vh;
+      grid-template-areas: 'navbar' 'isitengah' 'footer';
+  background: #C74D75;
+  font-size: 12vw;
+  text-align: center;
+  color: white;
+}
+
+.isitengah {
+  display: -ms-grid;
+  display: grid;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.head {
+  font-size: 7vw;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.ilustrasi {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 80%;
+}
+
+.ilustrasi img {
+  width: 100%;
+  height: auto;
+}
+
+.teks {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-size: 5vw;
+}
+
+/* VERSI DESKTOP (large laptops and desktops, 1200px and up) */
+/*# sourceMappingURL=tengah.css.map */
