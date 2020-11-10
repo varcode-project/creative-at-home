@@ -56,7 +56,7 @@
     background: none;
   }
   .homeabout {
-    background: none;
+    color: #0B1D52;
     display: -ms-grid;
     display: grid;
     height: 7vh;
@@ -70,6 +70,9 @@
         -ms-flex-align: start;
             align-items: start;
     font-size: 2vw;
+  }
+  .white {
+    color: white !important;
   }
 }
 
@@ -444,7 +447,7 @@
 }
 
 .ilustrasi img {
-  width: 100%;
+  width: 90%;
   height: auto;
 }
 
@@ -452,7 +455,7 @@
   background: none;
   display: -ms-grid;
   display: grid;
-  grid-gap: 20%;
+  grid-gap: 10%;
   font-size: 5vw;
 }
 
@@ -492,6 +495,7 @@
     height: 100%;
     display: -ms-grid;
     display: grid;
+    height: 100vh;
     -ms-grid-columns: 100vw;
         grid-template-columns: 100vw;
     -ms-grid-rows: 90vh 10vh;
@@ -547,7 +551,7 @@
     display: grid;
     grid-gap: 3vh;
     width: 50%;
-    font-size: 1.7vw;
+    font-size: 1.5vw;
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
@@ -555,11 +559,60 @@
   .teks img {
     display: none;
   }
-  .homeabout {
-    color: white;
-  }
 }
 
+.teksimage {
+  width: 100%;
+  height: 100%;
+  display: -ms-grid;
+  display: grid;
+  height: 100vh;
+  -ms-grid-columns: 100vw;
+      grid-template-columns: 100vw;
+  -ms-grid-rows: 85vh 5vh;
+      grid-template-rows: 85vh 5vh;
+      grid-template-areas: 'isiteksimage' 'footer';
+  background: #C74D75;
+  font-size: 12vw;
+  text-align: center;
+  color: white;
+}
+
+.isiteksimage {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 100vw;
+      grid-template-columns: 100vw;
+  -ms-grid-rows: 45vh 10vh 10vh;
+      grid-template-rows: 45vh 10vh 10vh;
+  background: none;
+}
+
+.isiteksimage h2 {
+  background: none;
+  font-size: 10vw;
+}
+
+.isiteksimage p {
+  background: none;
+}
+
+.gambar {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background: none;
+}
+
+.gambar img {
+  width: 90%;
+  height: auto;
+}
+
+/* VERSI DESKTOP (large laptops and desktops, 1200px and up) */
 .footer {
   background: none;
   width: 100%;
