@@ -69,7 +69,7 @@
         justify-content:center;
         width:100%;
         height:100%;
-        line-height:22px;
+        line-height:110%;
     }
     a // button nya
     {
@@ -83,7 +83,85 @@
         }
     }
 }
-
+/* Tablet (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+    .utama // style halaman utama
+    {
+        display:grid;
+        grid-template-columns: 100vw;
+        grid-template-rows: 10vh 50vh 40vh; // size navbar,header,image,desc ditotal harus jadi 100
+        grid-template-areas:
+        'header'
+        'image'
+        'desc';
+        background: #F9FBFF;
+        font-size:15vmin;
+        text-align:center;
+        color:#0B1D52;
+    }
+    .text // text atas image
+    {
+        background:none; // untuk debug
+        width:100%;
+        height:100%;
+        padding: 4vh 0vh 4vh 0vh; // jarak atas bawah
+        grid-area:header;
+        justify-content: center;
+        p // bagaimana jika..
+        {
+            padding: 1vh 0px 0px 0px;
+            font-size:0.3em;
+        }
+        h2
+        {
+            font-size:0.5em;
+        }
+    } 
+    .image // ilustrasi halaman utama
+    {
+        background:none; // untuk debug
+        grid-area:image;
+        width:100%;
+        height:100%;
+        display:flex; // display flex supaya bisa di justify content center (tengah secara horizontal)
+        justify-content:center;
+        img
+        {
+            width:100%;
+            height:auto;
+        }
+    }
+    .desc // manfaatkan.. + button
+    {
+        background:none; // untuk debug
+        width:100%;
+        height:100%;
+        font-size:0.27em;
+        grid-area:desc;
+        display:grid;
+        grid-template-rows: 40% 60%;
+        p
+        {
+            background:none; // untuk debug
+            display:flex;
+            align-items:center;
+            justify-content:center;
+            width:100%;
+            height:100%;
+        }
+        a // button nya
+        {
+            background:none; // untuk debug
+            width:100%;
+            height:100%;
+            img
+            {
+                width:80%;
+                height:auto;
+            }
+        }
+    }
+} 
 // desktop
 @media only screen and (min-width: 1200px) {
 .utama

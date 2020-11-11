@@ -12,13 +12,20 @@
 </head>
 <div class="nav">
 	<img src="ilustrasi/creativehome.svg">
-	<img class="burger" src="ilustrasi/burger.svg">
+	<img class="burger" onclick="openNav()" src="ilustrasi/burger.svg">
+	<div id="mySidenav" class="sidenav">
+		<a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+		<a href="#/0">Home</a>
+		<a href="#/1">Menu</a>
+	</div>
 </div>
+
 <body>
 	<div class="reveal">
+
 		<div class="slides">
+			<!-- HALAMAN UTAMA -->
 			<section>
-				<!-- HALAMAN UTAMA -->
 				<div class="utama scrollable">
 					<!-- NAVBAR PC -->
 					<div class="navpc"><img src="ilustrasi/creativehome.svg">
@@ -41,9 +48,9 @@
 				</div>
 			</section>
 			<!-- END HALAMAN UTAMA -->
-
 			<!-- MENU -->
 			<section>
+				<audio  data-autoplay src="audio.mp3"></audio>
 				<div class="menu scrollable">
 					<div class="navpc"><img src="ilustrasi/creativehome.svg">
 						<div class="homeabout"><a>Home</a><a>About</a></div>
@@ -67,8 +74,9 @@
 				</div>
 			</section>
 			<!-- END MENU -->
-			<!-- Slide Computer Science -->
+			<!-- Bagian Computer Science -->
 			<section>
+				<!-- Bagian 1 -->
 				<section data-transition="fade-in slide-out" data-background-color="#C74D75">
 					<div class="tengah">
 						<div class="navpc"><img src="ilustrasi/logoputih.svg">
@@ -83,7 +91,7 @@
 								<p>Computer science adalah ilmu yang mempelajari komputasi, algoritma, dan pemrograman
 									secara
 									keseluruhan.</p>
-							<img src="ilustrasi/swipe.svg">
+								<img src="ilustrasi/swipe.svg">
 							</div>
 						</div>
 						<div class="footer">
@@ -91,6 +99,7 @@
 						</div>
 					</div>
 				</section>
+				<!-- Bagian 2 -->
 				<section data-transition="slide" data-background-color="#C74D75">
 					<div class="tengah">
 						<div class="navpc"><img src="ilustrasi/logoputih.svg">
@@ -102,8 +111,9 @@
 							</div>
 							<div class="ilustrasi"><img src="ilustrasi/comp2.svg"></div>
 							<div class="teks">
-								<p>Kita bisa mengikuti kurikulum ilmu komputer dari dasar dan menyeluruh yang tidak fokus di satu cabang pemrograman saja.</p>
-							<img src="ilustrasi/swipe.svg">
+								<p>Kita bisa mengikuti kurikulum ilmu komputer dari dasar dan menyeluruh yang tidak
+									fokus di satu cabang pemrograman saja.</p>
+								<img src="ilustrasi/swipe.svg">
 							</div>
 						</div>
 						<div class="footer">
@@ -111,6 +121,7 @@
 						</div>
 					</div>
 				</section>
+				<!-- Bagian 3 -->
 				<section data-transition="slide" data-background-color="#C74D75">
 					<div class="tengah">
 						<div class="navpc"><img src="ilustrasi/logoputih.svg">
@@ -122,8 +133,9 @@
 							</div>
 							<div class="ilustrasi"><img src="ilustrasi/comp3.svg"></div>
 							<div class="teks">
-								<p>Untuk mempelajari Computer Science, kita bisa memulai nya dari kurikulum rekomendasi berikut.</p>
-							<img src="ilustrasi/swipe.svg">
+								<p>Untuk mempelajari Computer Science, kita bisa memulai nya dari kurikulum rekomendasi
+									berikut.</p>
+								<img src="ilustrasi/swipe.svg">
 							</div>
 						</div>
 						<div class="footer">
@@ -131,18 +143,21 @@
 						</div>
 					</div>
 				</section>
+				<!-- Bagian 4 -->
 				<section data-transition="slide" data-background-color="#C74D75">
-					<div class="teksimage">
+					<div class="teksgambar">
 						<div class="navpc"><img src="ilustrasi/logoputih.svg">
 							<div class="homeabout white"><a>Home</a><a>About</a></div>
 						</div>
-						<div class="isiteksimage">
+						<div class="isiteksgambar">
 							<div class="gambar">
 								<img src="ilustrasi/comp4.png">
 							</div>
-							<div class="teks">
+							<div class="teksjustify">
 								<h2>CS50X</h2>
-								<p>CS50x adalah kelas perkenalan Ilmu Komputer / Computer Science dari Harvard, yang terbuka untuk umum, dan bisa diakses secara gratis untuk semua orang.</p>
+								<p>CS50x adalah kelas perkenalan Ilmu Komputer / Computer Science dari Harvard, yang
+									terbuka untuk umum, dan bisa diakses secara gratis untuk semua orang.</p>
+								<img src="ilustrasi/swipe.svg">
 							</div>
 						</div>
 						<div class="footer">
@@ -150,59 +165,106 @@
 						</div>
 					</div>
 				</section>
+				<!-- Bagian 5 -->
+				<section data-transition="slide" data-background-color="#C74D75">
+					<div class="teksnogambar">
+						<div class="navpc"><img src="ilustrasi/logoputih.svg">
+							<div class="homeabout white"><a>Home</a><a>About</a></div>
+						</div>
+						<div class="isiteksnogambar">
+							<div class="teksnojustify">
+								<h2>Mengapa CS50X?</h2>
+								<p>Karena kamu bisa menonton video lecture secara lengkap, selain video, juga ada
+									problem set setiap pertemuan yang bisa kamu kerjakan, dan ketika sudah mencapai
+									minggu terakhir, ada final project untuk mengasah skill yang sudah kamu pelajari.
+								</p>
+								<img src="ilustrasi/swipe.svg">
+							</div>
+						</div>
+						<div class="footer">
+							<p>(c) 2020 created by varcode.</p>
+						</div>
+					</div>
+				</section>
+				<!-- Bagian 6 -->
+				<section data-transition="slide" data-background-color="#C74D75">
+					<div class="tampilan">
+						<div class="navpc"><img src="ilustrasi/logoputih.svg">
+							<div class="homeabout white"><a>Home</a><a>About</a></div>
+						</div>
+						<div class="isitampilan">
+							<div class="judul">
+								<h1>Tampilan CS50X</h1>
+							</div>
+							<div class="tampilanimg"><img src="ilustrasi/comp5.png"></div>
+							<div class="teks2">
+								<img src="ilustrasi/swipe.svg">
+							</div>
+						</div>
+						<div class="footer">
+							<p>(c) 2020 created by varcode.</p>
+						</div>
+					</div>
+				</section>
+				<!-- Bagian 7 -->
+				<section data-transition="slide" data-background-color="#C74D75">
+					<div class="tampilan">
+						<div class="navpc"><img src="ilustrasi/logoputih.svg">
+							<div class="homeabout white"><a>Home</a><a>About</a></div>
+						</div>
+						<div class="isitampilan">
+							<div class="judul">
+								<h1>Sertifikat CS50X</h1>
+							</div>
+							<div class="tampilanimg"><img src="ilustrasi/comp6.png"></div>
+							<div class="teks2">
+								<img src="ilustrasi/swipe.svg">
+							</div>
+						</div>
+						<div class="footer">
+							<p>(c) 2020 created by varcode.</p>
+						</div>
+					</div>
+				</section>
+				<!-- Bagian 8 -->
+				<section data-transition="slide" data-background-color="#C74D75">
+					<div class="mulaibelajar">
+						<div class="navpc"><img src="ilustrasi/logoputih.svg">
+							<div class="homeabout white"><a>Home</a><a>About</a></div>
+						</div>
+						<div class="isimulaibelajar">
+							<div class="headmulai">
+								<h2>Memulai belajar</h2>
+								<p>Untuk mulai pembelajaran kamu, masuk ke situs CS50
+									Lalu pilih pertemuan pertama (Week 0)</p>
+							</div>
+							<div class="mulaibelajarimg"><img src="ilustrasi/comp7.png"></div>
+							<div class="teks3">
+								<a href="https://cs50.harvard.edu/x/2020/" target="_blank"><img
+										src="ilustrasi/mulai.svg"></a>
+								<a href="index.html#/1"><img src="ilustrasi/kembali.svg"></a>
+							</div>
+						</div>
+						<div class="footer">
+							<p>(c) 2020 created by varcode.</p>
+						</div>
+					</div>
 			</section>
-
-			<section>
-				<section>
-					<div class="utama">
-						<div class="image">
-							<h1>Data Scientist</h1>
-						</div>
-					</div>
-				</section>
-				<section>
-					<div class="utama">
-						<div class="image"><img src="codeimg.png"></div>
-						<div class="text">
-							<p>Web Developer</p>
-							<p class="desc">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Impedit quis
-								itaque nobis neque tempora, dolorem quisquam placeat ea ipsum illo voluptas obcaecati?
-								Assumenda aliquid, at ad ipsam eligendi fugiat aspernatur, tenetur modi quae id nisi
-								adipisci? Sed exercitationem autem voluptates.</p>
-						</div>
-					</div>
-				</section>
-
-
-			</section>
-			<section>
-				<section>
-					<div class="utama">
-						<div class="image">
-							<h1>Mobile Developer</h1>
-						</div>
-					</div>
-				</section>
-				<section>
-					<div class="utama">
-						<div class="image"><img src="codeimg.png"></div>
-						<div class="text">
-							<p>Web Developer</p>
-							<p class="desc">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Impedit quis
-								itaque nobis neque tempora, dolorem quisquam placeat ea ipsum illo voluptas obcaecati?
-								Assumenda aliquid, at ad ipsam eligendi fugiat aspernatur, tenetur modi quae id nisi
-								adipisci? Sed exercitationem autem voluptates.</p>
-						</div>
-					</div>
-				</section>
-
-
-			</section>
-
+				<!-- End Bagian Computer Science -->
 
 		</div>
 
+		<script>
+			/* Set the width of the side navigation to 250px */
+			function openNav() {
+				document.getElementById("mySidenav").style.width = "50vw";
+			}
 
+			/* Set the width of the side navigation to 0 */
+			function closeNav() {
+				document.getElementById("mySidenav").style.width = "0";
+			}
+		</script>
 		<script src="https://unpkg.com/typewriter-effect@latest/dist/core.js"></script>
 		<script>
 			var app = document.getElementById('app');

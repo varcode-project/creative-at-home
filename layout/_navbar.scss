@@ -23,6 +23,83 @@
 {
     display:none; // hide navbar versi desktop
 }
+
+.sidenav {
+    box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.25);
+    height: 100%; 
+    width: 0; 
+    position: fixed; 
+    z-index: 1; 
+    top: 0; 
+    right: 0;
+    background-color: white; 
+    overflow-x: hidden; 
+    padding-top: 60px; 
+    transition: 0.5s; 
+  }
+  
+  
+  .sidenav a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 5vw;
+    color: #0B1D52;
+    display: block;
+    transition: 0.3s;
+  }
+  
+  
+  .sidenav a:hover {
+    color: #f1f1f1;
+  }
+  
+  
+  .sidenav .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-right: 0px;
+  }
+  
+  
+  #main {
+    transition: margin-right .5s;
+    padding: 20px;
+  }
+  
+  
+  @media screen and (max-height: 450px) {
+    .sidenav {padding-top: 15px;}
+    .sidenav a {font-size: 18px;}
+  }
+  /* Tablet (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+  .nav // navbar
+  {
+      box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.25);
+      position:relative;
+      z-index:10;
+      width:100%;
+      height:10vh; // tinggi navbar 10% viewport height
+      grid-area:navbar;
+      display:flex;
+      justify-content:space-between;
+      font-size:12vw;
+      img // logo creative@home
+      {
+          width: 45%;
+          height:auto;
+          background:none;
+          margin:0vh 3vh 0vh 3vh; // jarak kiri kanan
+      }
+      .burger
+      {
+        margin: 1vh 0vh 1vh 0vh;
+        width:10vh;
+      }
+  }
+}
 // desktop
 @media only screen and (min-width: 1200px) {
 .nav // navbar mobile

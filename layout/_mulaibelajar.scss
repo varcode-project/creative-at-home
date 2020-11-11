@@ -1,0 +1,242 @@
+// MOBILE FIRST
+
+.mulaibelajar // style untuk bagian yang posisi nya "mulaibelajar"
+{
+    width:100%;
+    height:100%;
+    display:grid;
+    height:100vh;
+    grid-template-columns: 100vw;
+    grid-template-rows: 85vh 5vh; // size navbar, headmulai, headmulai, image, teks, footer
+    grid-template-areas:
+    'isimulaibelajar'
+    'footer';
+    background:#C74D75;
+    font-size:12vmin;
+    text-align:center;
+    color:white; // warna teks
+}
+.isimulaibelajar // parent nya headmulai,image,teks
+{
+    grid-area:isimulaibelajar;
+    width:100%;
+    height:100%;
+    display:grid;
+    grid-template-rows: 20% 40% 20%;
+    align-content:center;
+    background:none;
+    grid-gap:0%;
+}
+
+.headmulai // headmulai isimulaibelajar
+{
+    background: none; // untuk debug
+    font-size:10vmin;
+    display:flex;
+    flex-direction:column;
+    p
+    {
+        font-size:4.8vmin;
+        margin:2vh;
+    }
+}
+.mulaibelajarimg // mulaibelajarimg
+{
+    background: none; // untuk debug
+    display:flex;
+    align-items:start;
+    width:100%;
+    height:100%;
+    img
+    {
+        box-shadow: 0px 10px 8px rgba(0, 0, 0, 0.25);
+        width:82%;
+        max-width:450px;
+        height:auto;
+    }
+}
+.teks3
+{
+    background: none; // untuk debug
+    display: flex;
+    flex-direction: column;
+    img
+    {
+        margin-top:3%;
+        width:70%;
+        height:auto;
+    }
+
+}
+/* Mobile kecil */
+@media only screen and (max-width: 600px) {
+    .headmulai // headmulai isimulaibelajar
+    {
+        font-size:9vmin;
+        p
+        {
+            font-size:3.6vmin;
+            margin:2vh;
+        }
+    }
+    .mulaibelajarimg // mulaibelajarimg
+    {
+        img
+        {
+            box-shadow: 0px 10px 8px rgba(0, 0, 0, 0.25);
+            width:90%;
+            max-width:550px;
+            height:auto;
+        }
+    }
+}
+/* Tablet (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+    .mulaibelajar // style untuk bagian yang posisi nya "mulaibelajar"
+    {
+        width:100%;
+        height:100%;
+        display:grid;
+        height:100vh;
+        grid-template-columns: 100vw;
+        grid-template-rows: 85vh 5vh; // size navbar, headmulai, headmulai, image, teks, footer
+        grid-template-areas:
+        'isimulaibelajar'
+        'footer';
+        background:#C74D75;
+        text-align:center;
+        color:white; // warna teks
+    }
+    .isimulaibelajar // parent nya headmulai,image,teks
+    {
+        grid-area:isimulaibelajar;
+        width:100%;
+        height:100%;
+        display:grid;
+        grid-template-rows: 20% 40% 20%;
+        align-content:center;
+        background:none;
+        grid-gap:0%;
+    }
+    
+    .headmulai // headmulai isimulaibelajar
+    {
+        background: none; // untuk debug
+        font-size:8vmin;
+        display:flex;
+        flex-direction:column;
+        p
+        {
+            font-size:3.5vmin;
+            margin:2vh;
+        }
+    }
+    .mulaibelajarimg // mulaibelajarimg
+    {
+        background: none; // untuk debug
+        display:flex;
+        align-items:center;
+        width:100%;
+        height:100%;
+        img
+        {
+            box-shadow: 0px 10px 8px rgba(0, 0, 0, 0.25);
+            width:80%;
+            height:auto;
+        }
+    }
+    .teks3
+    {
+        background: none; // untuk debug
+        display: flex;
+        flex-direction: column;
+        img
+        {
+            margin-top:3%;
+            width:100%;
+            height:auto;
+        }
+    
+    }
+}
+/* VERSI DESKTOP (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+    .mulaibelajar // style untuk bagian yang posisi nya "mulaibelajar"
+    {
+        width:100%;
+        height:100%;
+        display:grid;
+        grid-template-columns: 100vw;
+        grid-template-rows: 95vh 5vh; // size navbar, headmulai, headmulai, image, teks, footer
+        grid-template-areas:
+        'isimulaibelajar'
+        'footer';
+        background:#C74D75;
+        font-size:12vw;
+        text-align:center;
+        color:white; // warna teks
+    }
+    .isimulaibelajar // parent nya headmulai,image,teks
+    {
+        margin-top:15vh;
+        grid-area:isimulaibelajar;
+        width:100%;
+        display:grid;
+        grid-template-rows: 20vh 40vh 30vh;
+        align-content:stretch;
+        align-items: center;
+        grid-gap:0%;
+    }
+
+    .headmulai // headmulai isimulaibelajar
+    {
+        background: none; // untuk debug
+        font-size:4vw;
+        width:55vw;
+        display:grid;
+        align-items:none;
+        height:100%;
+        h2
+        {
+            background:none;
+
+        }
+        p
+        {
+            background:none;
+            font-size:2vw;
+            margin:0vh;
+        }
+    }
+    .mulaibelajarimg // mulaibelajarimg
+    {
+        background: none; // untuk debug
+        display:flex;
+        align-items:center;
+        width:100%;
+        height:100%;
+        img
+        {
+            box-shadow: 0px 10px 8px rgba(0, 0, 0, 0.25);
+            width:35%;
+            height:auto;
+        }
+    }
+    .teks3
+    {
+        background: none; // untuk debug
+        display: grid;
+        grid-template-rows:0vh;
+        grid-template-columns:25vw 25vw;
+        align-items: center;
+        width:50%;
+        height:100%;
+        img
+        {
+            margin-top:0%;
+            width:20vw;
+            height:auto;
+        }
+
+    }
+}
