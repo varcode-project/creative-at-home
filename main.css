@@ -1888,7 +1888,13 @@
   -ms-grid-row: 2;
   -ms-grid-column: 1;
   grid-area: footer;
-  height: 20vh;
+  height: 10vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 /* VERSI DESKTOP (large laptops and desktops, 1200px and up) */
@@ -1901,6 +1907,7 @@
     width: 100%;
     text-align: center;
     font-size: 1.5vw;
+    display: block;
   }
 }
 /*# sourceMappingURL=main.css.map */

@@ -6,7 +6,9 @@
     text-align: center;
     font-size:4vmin;
     grid-area:footer;   
-    height:20vh;
+    height:10vh;
+    display:flex;
+    align-items:center;
 }
 
 /* VERSI DESKTOP (large laptops and desktops, 1200px and up) */
@@ -20,6 +22,7 @@
     width: 100%;
     text-align: center;
     font-size:1.5vw;
+    display:block;
 }
 
 }
