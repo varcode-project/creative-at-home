@@ -11,7 +11,7 @@
     grid-template-areas:
     'isitengah'
     'footer';
-    background:#C74D75;
+   
     font-size:12vw;
     text-align:center;
     color:white; // warna teks
@@ -90,11 +90,11 @@
     display:grid;
     height:100vh;
     grid-template-columns: 100vw;
-    grid-template-rows: 85vh 5vh; // size navbar, header, head, image, teks, footer
+    grid-template-rows: 80vh 5vh; // size navbar, header, head, image, teks, footer
     grid-template-areas:
     'isitengah'
     'footer';
-    background:#C74D75;
+   
     text-align:center;
     color:white; // warna teks
 }
@@ -162,7 +162,7 @@
         grid-template-areas:
         'isitengah'
         'footer';
-        background:#C74D75;
+       
         font-size:12vw;
         text-align:center;
         color:white; // warna teks

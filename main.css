@@ -575,7 +575,6 @@
   -ms-grid-rows: 85vh 5vh;
       grid-template-rows: 85vh 5vh;
       grid-template-areas: 'isitengah' 'footer';
-  background: #C74D75;
   font-size: 12vw;
   text-align: center;
   color: white;
@@ -688,10 +687,9 @@
     height: 100vh;
     -ms-grid-columns: 100vw;
         grid-template-columns: 100vw;
-    -ms-grid-rows: 85vh 5vh;
-        grid-template-rows: 85vh 5vh;
+    -ms-grid-rows: 80vh 5vh;
+        grid-template-rows: 80vh 5vh;
         grid-template-areas: 'isitengah' 'footer';
-    background: #C74D75;
     text-align: center;
     color: white;
   }
@@ -783,7 +781,6 @@
     -ms-grid-rows: 90vh 10vh;
         grid-template-rows: 90vh 10vh;
         grid-template-areas: 'isitengah' 'footer';
-    background: #C74D75;
     font-size: 12vw;
     text-align: center;
     color: white;
@@ -851,10 +848,9 @@
   height: 100vh;
   -ms-grid-columns: 100vw;
       grid-template-columns: 100vw;
-  -ms-grid-rows: 85vh 5vh;
-      grid-template-rows: 85vh 5vh;
+  -ms-grid-rows: 80vh 5vh;
+      grid-template-rows: 80vh 5vh;
       grid-template-areas: 'isiteksgambar' 'footer';
-  background: #C74D75;
   font-size: 12vw;
   text-align: center;
   color: white;
@@ -951,7 +947,6 @@
     -ms-grid-rows: 85vh 5vh;
         grid-template-rows: 85vh 5vh;
         grid-template-areas: 'isiteksgambar' 'footer';
-    background: #C74D75;
     text-align: center;
     color: white;
   }
@@ -1040,7 +1035,6 @@
     -ms-grid-rows: 95vh 5vh;
         grid-template-rows: 95vh 5vh;
         grid-template-areas: 'isiteksgambar' 'footer';
-    background: #C74D75;
     font-size: 12vw;
     text-align: center;
     color: white;
@@ -1100,10 +1094,9 @@
   height: 100vh;
   -ms-grid-columns: 100vw;
       grid-template-columns: 100vw;
-  -ms-grid-rows: 85vh 5vh;
-      grid-template-rows: 85vh 5vh;
+  -ms-grid-rows: 80vh 5vh;
+      grid-template-rows: 80vh 5vh;
       grid-template-areas: 'isiteksnogambar' 'footer';
-  background: #C74D75;
   font-size: 12vw;
   text-align: center;
   color: white;
@@ -1235,7 +1228,6 @@
     -ms-grid-rows: 85vh 5vh;
         grid-template-rows: 85vh 5vh;
         grid-template-areas: 'isiteksnogambar' 'footer';
-    background: #C74D75;
     font-size: 12vmin;
     text-align: center;
     color: white;
@@ -1317,7 +1309,6 @@
     -ms-grid-rows: 95vh 5vh;
         grid-template-rows: 95vh 5vh;
         grid-template-areas: 'isiteksnogambar' 'footer';
-    background: #C74D75;
     font-size: 12vw;
     text-align: center;
     color: white;
@@ -1367,10 +1358,9 @@
   height: 100vh;
   -ms-grid-columns: 100vw;
       grid-template-columns: 100vw;
-  -ms-grid-rows: 85vh 5vh;
-      grid-template-rows: 85vh 5vh;
+  -ms-grid-rows: 80vh 5vh;
+      grid-template-rows: 80vh 5vh;
       grid-template-areas: 'isitampilan' 'footer';
-  background: #C74D75;
   font-size: 12vw;
   text-align: center;
   color: white;
@@ -1471,7 +1461,6 @@
     -ms-grid-rows: 85vh 5vh;
         grid-template-rows: 85vh 5vh;
         grid-template-areas: 'isitampilan' 'footer';
-    background: #C74D75;
     font-size: 12vw;
     text-align: center;
     color: white;
@@ -1541,7 +1530,6 @@
     -ms-grid-rows: 90vh 10vh;
         grid-template-rows: 90vh 10vh;
         grid-template-areas: 'isitampilan' 'footer';
-    background: #C74D75;
     font-size: 12vw;
     text-align: center;
     color: white;
@@ -1611,10 +1599,9 @@
   height: 100vh;
   -ms-grid-columns: 100vw;
       grid-template-columns: 100vw;
-  -ms-grid-rows: 85vh 5vh;
-      grid-template-rows: 85vh 5vh;
+  -ms-grid-rows: 80vh 5vh;
+      grid-template-rows: 80vh 5vh;
       grid-template-areas: 'isimulaibelajar' 'footer';
-  background: #C74D75;
   font-size: 12vmin;
   text-align: center;
   color: white;
@@ -1721,7 +1708,6 @@
     -ms-grid-rows: 85vh 5vh;
         grid-template-rows: 85vh 5vh;
         grid-template-areas: 'isimulaibelajar' 'footer';
-    background: #C74D75;
     text-align: center;
     color: white;
   }
@@ -1801,7 +1787,6 @@
     -ms-grid-rows: 95vh 5vh;
         grid-template-rows: 95vh 5vh;
         grid-template-areas: 'isimulaibelajar' 'footer';
-    background: #C74D75;
     font-size: 12vw;
     text-align: center;
     color: white;
