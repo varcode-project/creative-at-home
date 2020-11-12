@@ -53,6 +53,11 @@
     display: grid;
     grid-gap:10%;
     font-size:5vw;
+    text-align:justify;
+    p
+    {
+        margin:5%;  
+    }
     img
     {
         width:20%;
@@ -206,6 +211,10 @@
         width:50%;
         font-size:1.5vw;
         align-items: center;
+        p
+        {
+            margin:0%;  
+        }
         img
         {
           display:none;

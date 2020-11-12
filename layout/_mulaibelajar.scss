@@ -7,12 +7,10 @@
     display:grid;
     height:100vh;
     grid-template-columns: 100vw;
-    grid-template-rows: 80vh 5vh; // size navbar, headmulai, headmulai, image, teks, footer
+    grid-template-rows: 88vh 5vh; // size navbar, headmulai, headmulai, image, teks, footer
     grid-template-areas:
     'isimulaibelajar'
     'footer';
-   
-    font-size:12vmin;
     text-align:center;
     color:white; // warna teks
 }
@@ -22,7 +20,7 @@
     width:100%;
     height:100%;
     display:grid;
-    grid-template-rows: 20% 40% 20%;
+    grid-template-rows: 20% 45% 20%;
     align-content:center;
     background:none;
     grid-gap:0%;
@@ -31,26 +29,33 @@
 .headmulai // headmulai isimulaibelajar
 {
     background: none; // untuk debug
-    font-size:10vmin;
-    display:flex;
-    flex-direction:column;
+    display:grid;
+    align-content:center;
+    grid-gap:1vh;
+    background:none;
+    h2
+    {
+        font-size:10vmin;
+        background:none;
+    }
     p
     {
+        background:none;
         font-size:4.8vmin;
-        margin:2vh;
+        margin:0vh;
     }
 }
 .mulaibelajarimg // mulaibelajarimg
 {
     background: none; // untuk debug
     display:flex;
-    align-items:start;
+    align-items:center;
     width:100%;
     height:100%;
     img
     {
         box-shadow: 0px 10px 8px rgba(0, 0, 0, 0.25);
-        width:82%;
+        width:100%;
         max-width:450px;
         height:auto;
     }
@@ -63,7 +68,7 @@
     img
     {
         margin-top:3%;
-        width:70%;
+        width:80%;
         height:auto;
     }
 
@@ -204,7 +209,7 @@
         p
         {
             background:none;
-            font-size:2vw;
+            font-size:1.5vw;
             margin:0vh;
         }
     }
@@ -230,7 +235,7 @@
         grid-template-columns:25vw 25vw;
         align-items: center;
         width:50%;
-        height:100%;
+        height:90%;
         img
         {
             margin-top:0%;
