@@ -9,6 +9,7 @@
 	<link rel="stylesheet" href="dist/reveal.css">
 	<link rel="stylesheet" href="main.css">
 	<link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@500;600&display=swap" rel="stylesheet">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 </head>
 <div class="nav">
 	<img src="ilustrasi/navbar/creativehome.svg">
@@ -16,7 +17,7 @@
 	<div id="mySidenav" class="sidenav">
 		<a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
 		<a href="#/0">Home</a>
-		<a href="#/1">Menu</a>
+		<a href="#/3">Menu</a>
 	</div>
 </div>
 
@@ -24,11 +25,11 @@
 	<div class="reveal">
 		<div class="slides">
 			<!-- #/0 HALAMAN UTAMA -->
-			<section>
+			<section data-background-color="white">
 				<div class="utama scrollable">
 					<!-- NAVBAR PC -->
 					<div class="navpc"><img src="ilustrasi/navbar/creativehome.svg">
-						<div class="homeabout"><a href ="#/0">Home</a><a href="#/1">Menu</a></div>
+					<div class="homeabout"><a href ="#/0">Home</a><a href="#/2">Menu</a></div>
 					</div>
 					<!-- END NAVBAR -->
 					<div class="image">
@@ -42,17 +43,36 @@
 						<p>Manfaatkan waktu kamu selama pandemi!
 							<br>Explore & pelajari bidang-bidang yang ada
 							<br>di industri teknologi!</p>
+
 						<a href="index.html#/1"><img src="ilustrasi/start.svg"></a>
 					</div>
 				</div>
 			</section>
 			<!-- END HALAMAN UTAMA -->
 
-			<!-- #/1 MENU -->
-			<section>
+			<!-- #/1 INSTRUKSI SUARA -->
+			<section data-background-color="white">
+				<div class="xtengah">
+					<div class="navpc"><img src="ilustrasi/navbar/creativehome.svg">
+						<div class="homeabout"><a href ="#/0">Home</a><a href="#/2">Menu</a></div>
+					</div>
+					<div class="isixtengah">
+						<div class="xhead">
+							<h1>Aktifkan suara?</h1>
+							<p>Website ini dilengkapi dengan narasi suara, klik gambar dibawah untuk mengaktifkan/menonaktifkan narasi suara.</p>
+						</div>
+						<a href="#/1" id="mute-suara"><div class="mute"></div></a>
+						<a class="mulai2" href="#/2"><img src="ilustrasi/mulai2.svg"></a>
+					</div>
+				</div>
+			</section>
+			<!-- #/1 END INSTRUKSI SUARA -->
+
+			<!-- #/2 MENU -->
+			<section data-transition="zoom-in fade-out" data-background-color="white">
 				<div class="menu scrollable">
 					<div class="navpc"><img src="ilustrasi/navbar/creativehome.svg">
-						<div class="homeabout"><a href ="#/0">Home</a><a href="#/1">Menu</a></div>
+						<div class="homeabout"><a href ="#/0">Home</a><a href="#/2">Menu</a></div>
 					</div>
 					<!-- END NAVBAR-->
 					<div class="headermenu">
@@ -60,12 +80,12 @@
 						<p>Ayo upgrade keahlian teknologi kamu!</p>
 					</div>
 					<div class="pilihan">
-						<a class="menubutton compsci" href="index.html#/2"><img src="ilustrasi/menu/compsci.svg"></a>
-						<a class="menubutton webdev" href="index.html#/3"><img src="ilustrasi/menu/webdev.svg"></a>
-						<a class="menubutton datasci" href="index.html#/4"><img src="ilustrasi/menu/datasci.svg"></a>
-						<a class="menubutton gamedev" href="index.html#/5"><img src="ilustrasi/menu/gamedev.svg"></a>
-						<a class="menubutton comppro" href="index.html#/6"><img src="ilustrasi/menu/comppro.svg"></a>
-						<a class="menubutton mobdev" href="index.html#/7"><img src="ilustrasi/menu/mobdev.svg"></a>
+						<a class="menubutton compsci" href="index.html#/3"><img src="ilustrasi/menu/compsci.svg"></a>
+						<a class="menubutton webdev" href="index.html#/4"><img src="ilustrasi/menu/webdev.svg"></a>
+						<a class="menubutton datasci" href="index.html#/5"><img src="ilustrasi/menu/datasci.svg"></a>
+						<a class="menubutton gamedev" href="index.html#/6"><img src="ilustrasi/menu/gamedev.svg"></a>
+						<a class="menubutton comppro" href="index.html#/7"><img src="ilustrasi/menu/comppro.svg"></a>
+						<a class="menubutton mobdev" href="index.html#/8"><img src="ilustrasi/menu/mobdev.svg"></a>
 					</div>
 					<div class="footer">
 						<p>(c) 2020 created by varcode.</p>
@@ -74,13 +94,13 @@
 			</section>
 			<!-- END MENU -->
 
-			<!-- #/2 Bagian Computer Science -->
+			<!-- #/3 Bagian Computer Science -->
 			<section>
 				<!-- Bagian A -->
 				<section data-transition="fade-in slide-out" data-background-color="#C74D75">
 					<div class="tengah">
 						<div class="navpc"><img src="ilustrasi/navbar/logoputih.svg">
-							<div class="homeabout white"><a href ="#/0">Home</a><a href="#/1">Menu</a></div>
+							<div class="homeabout white"><a href ="#/0">Home</a><a href="#/2">Menu</a></div>
 						</div>
 						<div class="isitengah">
 							<div class="head">
@@ -103,7 +123,7 @@
 				<section data-transition="slide" data-background-color="#C74D75">
 					<div class="tengah">
 						<div class="navpc"><img src="ilustrasi/navbar/logoputih.svg">
-							<div class="homeabout white"><a href ="#/0">Home</a><a href="#/1">Menu</a></div>
+							<div class="homeabout white"><a href ="#/0">Home</a><a href="#/2">Menu</a></div>
 						</div>
 						<div class="isitengah">
 							<div class="head">
@@ -125,7 +145,7 @@
 				<section data-transition="slide" data-background-color="#C74D75">
 					<div class="tengah">
 						<div class="navpc"><img src="ilustrasi/navbar/logoputih.svg">
-							<div class="homeabout white"><a href ="#/0">Home</a><a href="#/1">Menu</a></div>
+							<div class="homeabout white"><a href ="#/0">Home</a><a href="#/2">Menu</a></div>
 						</div>
 						<div class="isitengah">
 							<div class="head">
@@ -147,7 +167,7 @@
 				<section data-transition="slide" data-background-color="#C74D75">
 					<div class="teksgambar">
 						<div class="navpc"><img src="ilustrasi/navbar/logoputih.svg">
-							<div class="homeabout white"><a href ="#/0">Home</a><a href="#/1">Menu</a></div>
+							<div class="homeabout white"><a href ="#/0">Home</a><a href="#/2">Menu</a></div>
 						</div>
 						<div class="isiteksgambar">
 							<div class="gambar">
@@ -169,7 +189,7 @@
 				<section data-transition="slide" data-background-color="#C74D75">
 					<div class="teksnogambar">
 						<div class="navpc"><img src="ilustrasi/navbar/logoputih.svg">
-							<div class="homeabout white"><a href ="#/0">Home</a><a href="#/1">Menu</a></div>
+							<div class="homeabout white"><a href ="#/0">Home</a><a href="#/2">Menu</a></div>
 						</div>
 						<div class="isiteksnogambar">
 							<div class="teksnojustify">
@@ -190,7 +210,7 @@
 				<section data-transition="slide" data-background-color="#C74D75">
 					<div class="tampilan">
 						<div class="navpc"><img src="ilustrasi/navbar/logoputih.svg">
-							<div class="homeabout white"><a href ="#/0">Home</a><a href="#/1">Menu</a></div>
+							<div class="homeabout white"><a href ="#/0">Home</a><a href="#/2">Menu</a></div>
 						</div>
 						<div class="isitampilan">
 							<div class="judul">
@@ -210,7 +230,7 @@
 				<section data-transition="slide" data-background-color="#C74D75">
 					<div class="tampilan">
 						<div class="navpc"><img src="ilustrasi/navbar/logoputih.svg">
-							<div class="homeabout white"><a href ="#/0">Home</a><a href="#/1">Menu</a></div>
+							<div class="homeabout white"><a href ="#/0">Home</a><a href="#/2">Menu</a></div>
 						</div>
 						<div class="isitampilan">
 							<div class="judul">
@@ -230,7 +250,7 @@
 				<section data-transition="slide" data-background-color="#C74D75">
 					<div class="mulaibelajar">
 						<div class="navpc"><img src="ilustrasi/navbar/logoputih.svg">
-							<div class="homeabout white"><a href ="#/0">Home</a><a href="#/1">Menu</a></div>
+							<div class="homeabout white"><a href ="#/0">Home</a><a href="#/2">Menu</a></div>
 						</div>
 						<div class="isimulaibelajar">
 							<div class="headmulai">
@@ -242,7 +262,7 @@
 							<div class="teks3">
 								<a href="https://cs50.harvard.edu/x/2020/" target="_blank"><img
 										src="ilustrasi/mulai.svg"></a>
-								<a href="index.html#/1"><img src="ilustrasi/kembali.svg"></a>
+								<a href="index.html#/2"><img src="ilustrasi/kembali.svg"></a>
 							</div>
 						</div>
 						<div class="footer">
@@ -253,13 +273,13 @@
 			</section>
 			<!-- End Bagian Computer Science -->
 
-			<!-- #/3 Bagian Web Development -->
+			<!-- #/4 Bagian Web Development -->
 			<section>
 				<!-- Bagian A -->
 				<section data-transition="fade-in slide-out" data-background-color="#02B099">
 					<div class="tengah">
 						<div class="navpc"><img src="ilustrasi/navbar/logoputih.svg">
-							<div class="homeabout white"><a href ="#/0">Home</a><a href="#/1">Menu</a></div>
+							<div class="homeabout white"><a href ="#/0">Home</a><a href="#/2">Menu</a></div>
 						</div>
 						<div class="isitengah">
 							<div class="head">
@@ -280,7 +300,7 @@
 				<section data-transition="slide" data-background-color="#02B099">
 					<div class="tengah">
 						<div class="navpc"><img src="ilustrasi/navbar/logoputih.svg">
-							<div class="homeabout white"><a href ="#/0">Home</a><a href="#/1">Menu</a></div>
+							<div class="homeabout white"><a href ="#/0">Home</a><a href="#/2">Menu</a></div>
 						</div>
 						<div class="isitengah">
 							<div class="head">
@@ -301,7 +321,7 @@
 				<section data-transition="slide" data-background-color="#02B099">
 					<div class="tengah">
 						<div class="navpc"><img src="ilustrasi/navbar/logoputih.svg">
-							<div class="homeabout white"><a href ="#/0">Home</a><a href="#/1">Menu</a></div>
+							<div class="homeabout white"><a href ="#/0">Home</a><a href="#/2">Menu</a></div>
 						</div>
 						<div class="isitengah">
 							<div class="head">
@@ -322,7 +342,7 @@
 				<section data-transition="slide" data-background-color="#02B099">
 					<div class="teksgambar">
 						<div class="navpc"><img src="ilustrasi/navbar/logoputih.svg">
-							<div class="homeabout white"><a href ="#/0">Home</a><a href="#/1">Menu</a></div>
+							<div class="homeabout white"><a href ="#/0">Home</a><a href="#/2">Menu</a></div>
 						</div>
 						<div class="isiteksgambar">
 							<div class="gambar">
@@ -344,7 +364,7 @@
 				<section data-transition="slide" data-background-color="#02B099">
 					<div class="teksnogambar">
 						<div class="navpc"><img src="ilustrasi/navbar/logoputih.svg">
-							<div class="homeabout white"><a href ="#/0">Home</a><a href="#/1">Menu</a></div>
+							<div class="homeabout white"><a href ="#/0">Home</a><a href="#/2">Menu</a></div>
 						</div>
 						<div class="isiteksnogambar">
 							<div class="teksnojustify">
@@ -364,7 +384,7 @@
 				<section data-transition="slide" data-background-color="#02B099">
 					<div class="tampilan">
 						<div class="navpc"><img src="ilustrasi/navbar/logoputih.svg">
-							<div class="homeabout white"><a href ="#/0">Home</a><a href="#/1">Menu</a></div>
+							<div class="homeabout white"><a href ="#/0">Home</a><a href="#/2">Menu</a></div>
 						</div>
 						<div class="isitampilan">
 							<div class="judul">
@@ -384,7 +404,7 @@
 				<section data-transition="slide" data-background-color="#02B099">
 					<div class="tampilan">
 						<div class="navpc"><img src="ilustrasi/navbar/logoputih.svg">
-							<div class="homeabout white"><a href ="#/0">Home</a><a href="#/1">Menu</a></div>
+							<div class="homeabout white"><a href ="#/0">Home</a><a href="#/2">Menu</a></div>
 						</div>
 						<div class="isitampilan">
 							<div class="judul">
@@ -404,7 +424,7 @@
 				<section data-transition="slide" data-background-color="#02B099">
 					<div class="mulaibelajar">
 						<div class="navpc"><img src="ilustrasi/navbar/logoputih.svg">
-							<div class="homeabout white"><a href ="#/0">Home</a><a href="#/1">Menu</a></div>
+							<div class="homeabout white"><a href ="#/0">Home</a><a href="#/2">Menu</a></div>
 						</div>
 						<div class="isimulaibelajar">
 							<div class="headmulai">
@@ -414,7 +434,7 @@
 							<div class="mulaibelajarimg"><img src="ilustrasi/bagian_webdev/webdev7.png"></div>
 							<div class="teks3">
 								<a href="https://freecodecamp.org" target="_blank"><img src="ilustrasi/mulai.svg"></a>
-								<a href="index.html#/1"><img src="ilustrasi/kembali.svg"></a>
+								<a href="index.html#/2"><img src="ilustrasi/kembali.svg"></a>
 							</div>
 						</div>
 						<div class="footer">
@@ -425,13 +445,13 @@
 			</section>
 			<!-- End Bagian Web Development -->
 
-			<!-- #/4 Bagian Data Science -->
+			<!-- #/5 Bagian Data Science -->
 			<section>
 				<!-- Bagian A -->
 				<section data-transition="fade-in slide-out" data-background-color="#F18842">
 					<div class="tengah">
 						<div class="navpc"><img src="ilustrasi/navbar/logoputih.svg">
-							<div class="homeabout white"><a href ="#/0">Home</a><a href="#/1">Menu</a></div>
+							<div class="homeabout white"><a href ="#/0">Home</a><a href="#/2">Menu</a></div>
 						</div>
 						<div class="isitengah">
 							<div class="head">
@@ -453,7 +473,7 @@
 				<section data-transition="slide" data-background-color="#F18842">
 					<div class="tengah">
 						<div class="navpc"><img src="ilustrasi/navbar/logoputih.svg">
-							<div class="homeabout white"><a>Home</a><a>About</a></div>
+							<div class="homeabout white"><a href ="#/0">Home</a><a href="#/2">Menu</a></div>
 						</div>
 						<div class="isitengah">
 							<div class="head">
@@ -474,7 +494,7 @@
 				<section data-transition="slide" data-background-color="#F18842">
 					<div class="tengah">
 						<div class="navpc"><img src="ilustrasi/navbar/logoputih.svg">
-							<div class="homeabout white"><a href ="#/0">Home</a><a href="#/1">Menu</a></div>
+							<div class="homeabout white"><a href ="#/0">Home</a><a href="#/2">Menu</a></div>
 						</div>
 						<div class="isitengah">
 							<div class="head">
@@ -495,7 +515,7 @@
 				<section data-transition="slide" data-background-color="#F18842">
 					<div class="teksgambar">
 						<div class="navpc"><img src="ilustrasi/navbar/logoputih.svg">
-							<div class="homeabout white"><a href ="#/0">Home</a><a href="#/1">Menu</a></div>
+							<div class="homeabout white"><a href ="#/0">Home</a><a href="#/2">Menu</a></div>
 						</div>
 						<div class="isiteksgambar">
 							<div class="gambar">
@@ -516,7 +536,7 @@
 				<section data-transition="slide" data-background-color="#F18842">
 					<div class="teksnogambar">
 						<div class="navpc"><img src="ilustrasi/navbar/logoputih.svg">
-							<div class="homeabout white"><a href ="#/0">Home</a><a href="#/1">Menu</a></div>
+							<div class="homeabout white"><a href ="#/0">Home</a><a href="#/2">Menu</a></div>
 						</div>
 						<div class="isiteksnogambar">
 							<div class="teksnojustify">
@@ -535,7 +555,7 @@
 				<section data-transition="slide" data-background-color="#F18842">
 					<div class="tampilan">
 						<div class="navpc"><img src="ilustrasi/navbar/logoputih.svg">
-							<div class="homeabout white"><a href ="#/0">Home</a><a href="#/1">Menu</a></div>
+							<div class="homeabout white"><a href ="#/0">Home</a><a href="#/2">Menu</a></div>
 						</div>
 						<div class="isitampilan">
 							<div class="judul">
@@ -555,7 +575,7 @@
 				<section data-transition="slide" data-background-color="#F18842">
 					<div class="tampilan">
 						<div class="navpc"><img src="ilustrasi/navbar/logoputih.svg">
-							<div class="homeabout white"><a href ="#/0">Home</a><a href="#/1">Menu</a></div>
+							<div class="homeabout white"><a href ="#/0">Home</a><a href="#/2">Menu</a></div>
 						</div>
 						<div class="isitampilan">
 							<div class="judul">
@@ -575,7 +595,7 @@
 				<section data-transition="slide" data-background-color="#F18842">
 					<div class="mulaibelajar">
 						<div class="navpc"><img src="ilustrasi/navbar/logoputih.svg">
-							<div class="homeabout white"><a href ="#/0">Home</a><a href="#/1">Menu</a></div>
+							<div class="homeabout white"><a href ="#/0">Home</a><a href="#/2">Menu</a></div>
 						</div>
 						<div class="isimulaibelajar">
 							<div class="headmulai">
@@ -586,7 +606,7 @@
 							<div class="mulaibelajarimg"><img src="ilustrasi/bagian_datascience/datascience8.png"></div>
 							<div class="teks3">
 								<a href="https://cs50.harvard.edu/x/2020/" target="_blank"><img src="ilustrasi/mulai.svg"></a>
-								<a href="index.html#/1"><img src="ilustrasi/kembali.svg"></a>
+								<a href="index.html#/2"><img src="ilustrasi/kembali.svg"></a>
 							</div>
 						</div>
 						<div class="footer">
@@ -597,13 +617,13 @@
 			</section>
 			<!-- End Bagian Data Science -->
 
-			<!-- #/5 Bagian Game Development -->
+			<!-- #/6 Bagian Game Development -->
 			<section>
 				<!-- Bagian A -->
 				<section data-transition="fade-in slide-out" data-background-color="#C74D75">
 					<div class="tengah">
 						<div class="navpc"><img src="ilustrasi/navbar/logoputih.svg">
-							<div class="homeabout white"><a href ="#/0">Home</a><a href="#/1">Menu</a></div>
+							<div class="homeabout white"><a href ="#/0">Home</a><a href="#/2">Menu</a></div>
 						</div>
 						<div class="isitengah">
 							<div class="head">
@@ -625,7 +645,7 @@
 				<section data-transition="slide" data-background-color="#C74D75">
 					<div class="tengah">
 						<div class="navpc"><img src="ilustrasi/navbar/logoputih.svg">
-							<div class="homeabout white"><a href ="#/0">Home</a><a href="#/1">Menu</a></div>
+							<div class="homeabout white"><a href ="#/0">Home</a><a href="#/2">Menu</a></div>
 						</div>
 						<div class="isitengah">
 							<div class="head">
@@ -647,7 +667,7 @@
 				<section data-transition="slide" data-background-color="#C74D75">
 					<div class="tengah">
 						<div class="navpc"><img src="ilustrasi/navbar/logoputih.svg">
-							<div class="homeabout white"><a href ="#/0">Home</a><a href="#/1">Menu</a></div>
+							<div class="homeabout white"><a href ="#/0">Home</a><a href="#/2">Menu</a></div>
 						</div>
 						<div class="isitengah">
 							<div class="head">
@@ -669,7 +689,7 @@
 				<section data-transition="slide" data-background-color="#C74D75">
 					<div class="teksgambar">
 						<div class="navpc"><img src="ilustrasi/navbar/logoputih.svg">
-							<div class="homeabout white"><a href ="#/0">Home</a><a href="#/1">Menu</a></div>
+							<div class="homeabout white"><a href ="#/0">Home</a><a href="#/2">Menu</a></div>
 						</div>
 						<div class="isiteksgambar">
 							<div class="gambar">
@@ -691,7 +711,7 @@
 				<section data-transition="slide" data-background-color="#C74D75">
 					<div class="teksnogambar">
 						<div class="navpc"><img src="ilustrasi/navbar/logoputih.svg">
-							<div class="homeabout white"><a href ="#/0">Home</a><a href="#/1">Menu</a></div>
+							<div class="homeabout white"><a href ="#/0">Home</a><a href="#/2">Menu</a></div>
 						</div>
 						<div class="isiteksnogambar">
 							<div class="teksnojustify">
@@ -712,7 +732,7 @@
 				<section data-transition="slide" data-background-color="#C74D75">
 					<div class="tampilan">
 						<div class="navpc"><img src="ilustrasi/navbar/logoputih.svg">
-							<div class="homeabout white"><a href ="#/0">Home</a><a href="#/1">Menu</a></div>
+							<div class="homeabout white"><a href ="#/0">Home</a><a href="#/2">Menu</a></div>
 						</div>
 						<div class="isitampilan">
 							<div class="judul">
@@ -732,7 +752,7 @@
 				<section data-transition="slide" data-background-color="#C74D75">
 					<div class="tampilan">
 						<div class="navpc"><img src="ilustrasi/navbar/logoputih.svg">
-							<div class="homeabout white"><a href ="#/0">Home</a><a href="#/1">Menu</a></div>
+							<div class="homeabout white"><a href ="#/0">Home</a><a href="#/2">Menu</a></div>
 						</div>
 						<div class="isitampilan">
 							<div class="judul">
@@ -752,7 +772,7 @@
 				<section data-transition="slide" data-background-color="#C74D75">
 					<div class="mulaibelajar">
 						<div class="navpc"><img src="ilustrasi/navbar/logoputih.svg">
-							<div class="homeabout white"><a href ="#/0">Home</a><a href="#/1">Menu</a></div>
+							<div class="homeabout white"><a href ="#/0">Home</a><a href="#/2">Menu</a></div>
 						</div>
 						<div class="isimulaibelajar">
 							<div class="headmulai">
@@ -763,7 +783,7 @@
 							<div class="mulaibelajarimg"><img src="ilustrasi/bagian_compsci/comp5.png"></div>
 							<div class="teks3">
 								<a href="https://cs50.harvard.edu/x/2020/" target="_blank"><img src="ilustrasi/mulai.svg"></a>
-								<a href="index.html#/1"><img src="ilustrasi/kembali.svg"></a>
+								<a href="index.html#/2"><img src="ilustrasi/kembali.svg"></a>
 							</div>
 						</div>
 						<div class="footer">
@@ -774,13 +794,13 @@
 			</section>
 			<!-- End Bagian Game Development -->
 
-			<!-- #/6 Bagian Competitive Programming -->
+			<!-- #/7 Bagian Competitive Programming -->
 			<section>
 				<!-- Bagian A -->
 				<section data-transition="fade-in slide-out" data-background-color="#33383B">
 					<div class="tengah">
 						<div class="navpc"><img src="ilustrasi/navbar/logoputih.svg">
-							<div class="homeabout white"><a href ="#/0">Home</a><a href="#/1">Menu</a></div>
+							<div class="homeabout white"><a href ="#/0">Home</a><a href="#/2">Menu</a></div>
 						</div>
 						<div class="isitengah">
 							<div class="head">
@@ -802,7 +822,7 @@
 				<section data-transition="slide" data-background-color="#33383B">
 					<div class="tengah">
 						<div class="navpc"><img src="ilustrasi/navbar/logoputih.svg">
-							<div class="homeabout white"><a href ="#/0">Home</a><a href="#/1">Menu</a></div>
+							<div class="homeabout white"><a href ="#/0">Home</a><a href="#/2">Menu</a></div>
 						</div>
 						<div class="isitengah">
 							<div class="head">
@@ -824,7 +844,7 @@
 				<section data-transition="slide" data-background-color="#33383B">
 					<div class="tengah">
 						<div class="navpc"><img src="ilustrasi/navbar/logoputih.svg">
-							<div class="homeabout white"><a href ="#/0">Home</a><a href="#/1">Menu</a></div>
+							<div class="homeabout white"><a href ="#/0">Home</a><a href="#/2">Menu</a></div>
 						</div>
 						<div class="isitengah">
 							<div class="head">
@@ -846,7 +866,7 @@
 				<section data-transition="slide" data-background-color="#33383B">
 					<div class="teksgambar">
 						<div class="navpc"><img src="ilustrasi/navbar/logoputih.svg">
-							<div class="homeabout white"><a href ="#/0">Home</a><a href="#/1">Menu</a></div>
+							<div class="homeabout white"><a href ="#/0">Home</a><a href="#/2">Menu</a></div>
 						</div>
 						<div class="isiteksgambar">
 							<div class="gambar">
@@ -868,7 +888,7 @@
 				<section data-transition="slide" data-background-color="#33383B">
 					<div class="teksnogambar">
 						<div class="navpc"><img src="ilustrasi/navbar/logoputih.svg">
-							<div class="homeabout white"><a href ="#/0">Home</a><a href="#/1">Menu</a></div>
+							<div class="homeabout white"><a href ="#/0">Home</a><a href="#/2">Menu</a></div>
 						</div>
 						<div class="isiteksnogambar">
 							<div class="teksnojustify">
@@ -889,7 +909,7 @@
 				<section data-transition="slide" data-background-color="#33383B">
 					<div class="tampilan">
 						<div class="navpc"><img src="ilustrasi/navbar/logoputih.svg">
-							<div class="homeabout white"><a href ="#/0">Home</a><a href="#/1">Menu</a></div>
+							<div class="homeabout white"><a href ="#/0">Home</a><a href="#/2">Menu</a></div>
 						</div>
 						<div class="isitampilan">
 							<div class="judul">
@@ -909,7 +929,7 @@
 				<section data-transition="slide" data-background-color="#33383B">
 					<div class="tampilan">
 						<div class="navpc"><img src="ilustrasi/navbar/logoputih.svg">
-							<div class="homeabout white"><a href ="#/0">Home</a><a href="#/1">Menu</a></div>
+							<div class="homeabout white"><a href ="#/0">Home</a><a href="#/2">Menu</a></div>
 						</div>
 						<div class="isitampilan">
 							<div class="judul">
@@ -929,7 +949,7 @@
 				<section data-transition="slide" data-background-color="#33383B">
 					<div class="mulaibelajar">
 						<div class="navpc"><img src="ilustrasi/navbar/logoputih.svg">
-							<div class="homeabout white"><a href ="#/0">Home</a><a href="#/1">Menu</a></div>
+							<div class="homeabout white"><a href ="#/0">Home</a><a href="#/2">Menu</a></div>
 						</div>
 						<div class="isimulaibelajar">
 							<div class="headmulai">
@@ -940,7 +960,7 @@
 							<div class="mulaibelajarimg"><img src="ilustrasi/bagian_compsci/comp5.png"></div>
 							<div class="teks3">
 								<a href="https://cs50.harvard.edu/x/2020/" target="_blank"><img src="ilustrasi/mulai.svg"></a>
-								<a href="index.html#/1"><img src="ilustrasi/kembali.svg"></a>
+								<a href="index.html#/2"><img src="ilustrasi/kembali.svg"></a>
 							</div>
 						</div>
 						<div class="footer">
@@ -951,13 +971,13 @@
 			</section>
 			<!-- End Bagian Competitive Programming -->
 
-			<!-- #/7 Bagian Mobile Development -->
+			<!-- #/8 Bagian Mobile Development -->
 			<section>
 				<!-- Bagian A -->
 				<section data-transition="fade-in slide-out" data-background-color="#C74D75">
 					<div class="tengah">
 						<div class="navpc"><img src="ilustrasi/navbar/logoputih.svg">
-							<div class="homeabout white"><a href ="#/0">Home</a><a href="#/1">Menu</a></div>
+							<div class="homeabout white"><a href ="#/0">Home</a><a href="#/2">Menu</a></div>
 						</div>
 						<div class="isitengah">
 							<div class="head">
@@ -979,7 +999,7 @@
 				<section data-transition="slide" data-background-color="#C74D75">
 					<div class="tengah">
 						<div class="navpc"><img src="ilustrasi/navbar/logoputih.svg">
-							<div class="homeabout white"><a href ="#/0">Home</a><a href="#/1">Menu</a></div>
+							<div class="homeabout white"><a href ="#/0">Home</a><a href="#/2">Menu</a></div>
 						</div>
 						<div class="isitengah">
 							<div class="head">
@@ -1001,7 +1021,7 @@
 				<section data-transition="slide" data-background-color="#C74D75">
 					<div class="tengah">
 						<div class="navpc"><img src="ilustrasi/navbar/logoputih.svg">
-							<div class="homeabout white"><a href ="#/0">Home</a><a href="#/1">Menu</a></div>
+							<div class="homeabout white"><a href ="#/0">Home</a><a href="#/2">Menu</a></div>
 						</div>
 						<div class="isitengah">
 							<div class="head">
@@ -1023,7 +1043,7 @@
 				<section data-transition="slide" data-background-color="#C74D75">
 					<div class="teksgambar">
 						<div class="navpc"><img src="ilustrasi/navbar/logoputih.svg">
-							<div class="homeabout white"><a href ="#/0">Home</a><a href="#/1">Menu</a></div>
+							<div class="homeabout white"><a href ="#/0">Home</a><a href="#/2">Menu</a></div>
 						</div>
 						<div class="isiteksgambar">
 							<div class="gambar">
@@ -1045,7 +1065,7 @@
 				<section data-transition="slide" data-background-color="#C74D75">
 					<div class="teksnogambar">
 						<div class="navpc"><img src="ilustrasi/navbar/logoputih.svg">
-							<div class="homeabout white"><a href ="#/0">Home</a><a href="#/1">Menu</a></div>
+							<div class="homeabout white"><a href ="#/0">Home</a><a href="#/2">Menu</a></div>
 						</div>
 						<div class="isiteksnogambar">
 							<div class="teksnojustify">
@@ -1066,7 +1086,7 @@
 				<section data-transition="slide" data-background-color="#C74D75">
 					<div class="tampilan">
 						<div class="navpc"><img src="ilustrasi/navbar/logoputih.svg">
-							<div class="homeabout white"><a href ="#/0">Home</a><a href="#/1">Menu</a></div>
+							<div class="homeabout white"><a href ="#/0">Home</a><a href="#/2">Menu</a></div>
 						</div>
 						<div class="isitampilan">
 							<div class="judul">
@@ -1086,7 +1106,7 @@
 				<section data-transition="slide" data-background-color="#C74D75">
 					<div class="tampilan">
 						<div class="navpc"><img src="ilustrasi/navbar/logoputih.svg">
-							<div class="homeabout white"><a href ="#/0">Home</a><a href="#/1">Menu</a></div>
+							<div class="homeabout white"><a href ="#/0">Home</a><a href="#/2">Menu</a></div>
 						</div>
 						<div class="isitampilan">
 							<div class="judul">
@@ -1106,7 +1126,7 @@
 				<section data-transition="slide" data-background-color="#C74D75">
 					<div class="mulaibelajar">
 						<div class="navpc"><img src="ilustrasi/navbar/logoputih.svg">
-							<div class="homeabout white"><a href ="#/0">Home</a><a href="#/1">Menu</a></div>
+							<div class="homeabout white"><a href ="#/0">Home</a><a href="#/2">Menu</a></div>
 						</div>
 						<div class="isimulaibelajar">
 							<div class="headmulai">
@@ -1117,7 +1137,7 @@
 							<div class="mulaibelajarimg"><img src="ilustrasi/bagian_compsci/comp5.png"></div>
 							<div class="teks3">
 								<a href="https://cs50.harvard.edu/x/2020/" target="_blank"><img src="ilustrasi/mulai.svg"></a>
-								<a href="index.html#/1"><img src="ilustrasi/kembali.svg"></a>
+								<a href="index.html#/2"><img src="ilustrasi/kembali.svg"></a>
 							</div>
 						</div>
 						<div class="footer">
@@ -1132,6 +1152,25 @@
 			
 		</div>
 	</div>
+		<!--<audio data-autoplay src="audio.mp3" id="suara"> -->
+		<script>
+			$(".mute").click(function()
+			{
+ 				$(this).toggleClass("not"); 
+			});
+			$("audio").prop('muted', true);
+			$("#mute-suara").click( function ()
+			{
+				if( $("audio").prop('muted') )
+				{
+					$("audio").prop('muted', false);
+				}
+				else
+				{
+					$("audio").prop('muted', true);
+				}
+			});
+		</script>
 		<script>
 			/* Set the width of the side navigation to 250px */
 			function openNav() {
@@ -1190,6 +1229,7 @@
 				overview: true,
 				showNotes: false,
 				mouseWheel: true,
+				keyboard: false,
 				// Learn about plugins: https://revealjs.com/plugins/
 				plugins: [RevealMarkdown, RevealHighlight, RevealNotes]
 			});
