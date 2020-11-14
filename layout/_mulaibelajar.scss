@@ -65,6 +65,7 @@
     background: none; // untuk debug
     display: flex;
     flex-direction: column;
+    width:70%;
     img
     {
         margin-top:3%;
@@ -89,14 +90,22 @@
         img
         {
             box-shadow: 0px 10px 8px rgba(0, 0, 0, 0.25);
-            width:90%;
-            max-width:550px;
+            width:70%;
+            max-width:300px;
             height:auto;
+        }
+    }
+    .teks3
+    {
+        padding-top:5%;
+        a
+        {
+            width:65%;
         }
     }
 }
 /* Tablet (landscape tablets, 768px and up) */
-@media only screen and (min-width: 768px) {
+@media only screen and (max-width: 1023px) {
     .mulaibelajar // style untuk bagian yang posisi nya "mulaibelajar"
     {
         width:100%;
@@ -104,7 +113,7 @@
         display:grid;
         height:100vh;
         grid-template-columns: 100vw;
-        grid-template-rows: 85vh 5vh; // size navbar, headmulai, headmulai, image, teks, footer
+        grid-template-rows: 80vh 5vh; // size navbar, headmulai, headmulai, image, teks, footer
         grid-template-areas:
         'isimulaibelajar'
         'footer';
@@ -146,7 +155,7 @@
         img
         {
             box-shadow: 0px 10px 8px rgba(0, 0, 0, 0.25);
-            width:80%;
+            width:100%;
             height:auto;
         }
     }
@@ -155,6 +164,7 @@
         background: none; // untuk debug
         display: flex;
         flex-direction: column;
+        width:100%;
         img
         {
             margin-top:3%;

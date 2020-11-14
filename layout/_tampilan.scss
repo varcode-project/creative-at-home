@@ -79,7 +79,7 @@
     }
 }
   /* Tablet (landscape tablets, 768px and up) */
-  @media only screen and (min-width: 768px) {
+  @media only screen and (max-width: 1023px) {
     .tampilan // style untuk bagian yang posisi nya "tampilan"
     {
         width:100%;
@@ -87,7 +87,7 @@
         display:grid;
         height:100vh;
         grid-template-columns: 100vw;
-        grid-template-rows: 85vh 5vh; // size navbar, judul, judul, image, teks, footer
+        grid-template-rows: 80vh 5vh; // size navbar, judul, judul, image, teks, footer
         grid-template-areas:
         'isitampilan'
         'footer';
@@ -111,7 +111,7 @@
     .judul // judul isitampilan
     {
         background: none; // untuk debug
-        font-size:10vw;
+        font-size:6vw;
         padding-bottom:5vh;
         display:flex;
         align-items:center;
@@ -134,7 +134,7 @@
     {
         img
         {
-            margin-top:65%;
+            margin-top:95%;
             width:15vw;
             height:auto;
             animation: upNdown 1.5s infinite linear;

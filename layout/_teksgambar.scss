@@ -54,6 +54,7 @@
     font-size:5vw;
     img
     {
+        margin-top:0%;
         width:20%;
         height:auto;
         animation: upNdown 1.5s infinite linear;
@@ -70,14 +71,14 @@
     {
         img
         {
-            width:15%;
+            widows: 20%;
             height:auto;
             animation: upNdown 1.5s infinite linear;
         }
     }
 }
 /* Tablet (landscape tablets, 768px and up) */
-@media only screen and (min-width: 1023px) {
+@media only screen and (max-width: 1023px) {
 .teksgambar
 {
     width:100%;
@@ -85,7 +86,7 @@
     display:grid;
     height:100vh;
     grid-template-columns: 100vw;
-    grid-template-rows: 85vh 5vh; // size navbar, header, head, image, teks, footer
+    grid-template-rows: 75vh 10vh; // size navbar, header, head, image, teks, footer
     grid-template-areas:
     'isiteksgambar'
     'footer';
@@ -128,7 +129,7 @@
     width:90%;
     background: none; // untuk debug
     display: grid;
-    grid-gap:10%;
+    grid-gap:5%;
     font-size:5vmin;
     img
     {
