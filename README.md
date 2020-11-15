@@ -1,5 +1,5 @@
 # creative@home
-[![Build Status](https://travis-ci.org/joemccann/dillinger.svg?branch=master)](https://travis-ci.org/joemccann/dillinger)
+[![Build Status](https://imgur.com/Z8Ox0nf](https://imgur.com/Z8Ox0nf)
 ![varcode](https://i.imgur.com/GVFyYPy.png)
 
 creative@home adalah website yang bertujuan untuk mensoosialisasikan tentang kursus - kursus coding yang ada, karena sebenarnya banyak sekali kursus pemrograman yang bisa diakses secara gratis, Oleh sebab itu, kami ingin membuat website yang mensosialisasikan kursus pemrograman gratis, yang telah kami susun sesuai dengan cabang pemrograman yang ada.
