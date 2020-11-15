@@ -878,6 +878,7 @@
     margin-bottom: 100%;
   }
   .teks img {
+    margin-top: 5%;
     width: 13vw;
     height: auto;
     -webkit-animation: upNdown 1.5s infinite linear;
@@ -1047,7 +1048,7 @@
 }
 
 .teksjustify img {
-  margin-top: 0%;
+  margin-top: 5%;
   width: 20%;
   height: auto;
   -webkit-animation: upNdown 1.5s infinite linear;
