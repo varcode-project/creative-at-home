@@ -536,6 +536,10 @@
     font-size: 3vmin;
     width: 80%;
   }
+  .mulai2 img {
+    width: 450px;
+    height: auto;
+  }
 }
 
 @media only screen and (min-width: 1200px) {
@@ -847,7 +851,7 @@
   }
   .head {
     background: none;
-    font-size: 7vmin;
+    font-size: 5.5vmin;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -878,7 +882,7 @@
     margin-bottom: 100%;
   }
   .teks img {
-    margin-top: 5%;
+    margin-top: 0%;
     width: 13vw;
     height: auto;
     -webkit-animation: upNdown 1.5s infinite linear;
@@ -1137,6 +1141,7 @@
     font-size: 5vmin;
   }
   .teksjustify img {
+    display: none;
     width: 15vw;
     height: auto;
     -webkit-animation: upNdown 1.5s infinite linear;
@@ -1392,7 +1397,7 @@
         -ms-flex-align: center;
             align-items: center;
     width: 100%;
-    font-size: 10vmin;
+    font-size: 8vmin;
   }
   .isiteksnogambar p {
     font-size: 5vmin;

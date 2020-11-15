@@ -126,7 +126,7 @@
 .head // head isitengah
 {
     background: none; // untuk debug
-    font-size:7vmin;
+    font-size:5.5vmin;
     display:flex;
     align-items:center;
 }
@@ -151,7 +151,7 @@
     margin-bottom:100%;
     img
     {
-        margin-top:5%;
+        margin-top:0%;
         width:13vw;
         height:auto;
         animation: upNdown 1.5s infinite linear;
