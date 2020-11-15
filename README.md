@@ -7,7 +7,3 @@ creative@home adalah website yang bertujuan untuk mensosialisasikan tentang kurs
 ![Halaman Utama](https://i.imgur.com/o9oWEex.png)
 **Menu**
 ![Menu](https://i.imgur.com/Wb3PFvU.png)
-**Bagian Pertama**
-![Bagian Pertama](https://i.imgur.com/f5QjPak.png)
-**Bagian Terakhir**
-![Bagian Terakhir](https://i.imgur.com/Zksp8PP.png)
